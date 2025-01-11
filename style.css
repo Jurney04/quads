@@ -146,6 +146,7 @@ h5 {
 	max-height: 60vh;
 	overflow: hidden;
 	border-radius: 35px;
+	object-fit: cover;
 }
 .main_btn {
 	padding: 5% 5%;
