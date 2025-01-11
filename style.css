@@ -1,0 +1,196 @@
+/* <link rel="stylesheet" href="https://use.typekit.net/jwo3hsk.css"> */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #f8f7d3;
+
+	display: grid;
+}
+.grid {
+	width: 100%;
+	height: auto;
+	z-index: 1000;
+	position: absolute;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+btn {
+	font-family: "lft-etica", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.flex {
+	display: flex;
+	vertical-align: middle;
+}
+.colomn {
+	flex-direction: column;
+}
+.space-between {
+	justify-content: space-between;
+}
+.padding {
+	padding: 7.5vh 14vh;
+}
+.text-width {
+	width: 40%;
+}
+/* nav _____________________________________________________________________________________________________________________________ */
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 2vh 7.5%;
+	background-color: #ffffff80;
+	height: 4vh;
+}
+.nav-categories {
+	width: 35%;
+	justify-content: space-evenly;
+}
+.nav-us {
+	width: 15%;
+}
+nav a {
+	color: black;
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-weight: 700;
+	vertical-align: middle;
+	margin: 0;
+}
+.nav-categories a,
+.nav-us a {
+	margin-top: 1vh;
+}
+.nav-categories a:hover {
+	text-decoration: underline;
+}
+.nav-us a:hover {
+	text-decoration: underline;
+}
+.logo {
+	height: 6vh;
+	margin-top: -1vh;
+}
+.name {
+	width: fit-content;
+	justify-content: space-between;
+}
+/* ____________________________________________________________________________________________________________________________________ */
+.pic {
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	height: 90vh;
+	object-fit: cover;
+}
+h4 {
+	font-size: 8vh;
+	margin: 0;
+	text-align: center;
+}
+h5 {
+	font-size: 2.5vh;
+	margin: 0;
+}
+.cards {
+	width: 71%;
+	height: 90vh;
+	justify-self: center;
+	margin-bottom: 2.5vh;
+}
+.card {
+	height: 20%;
+	width: 20%;
+	border-radius: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-self: flex-end;
+	align-items: center;
+	text-decoration: none;
+}
+.card:hover {
+	animation: 0.5s ease 0s normal infinite none scale-down-center;
+	opacity: 1;
+}
+.card img {
+	width: 7.5vh;
+}
+@keyframes scale-down-center {
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	to {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+/* _________________________________________________________________________ */
+.main_info {
+	align-items: center;
+}
+.main_img {
+	width: 33%;
+	height: auto;
+	max-height: 60vh;
+	overflow: hidden;
+	border-radius: 35px;
+}
+.main_btn {
+	padding: 5% 5%;
+	text-decoration: none;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	align-self: flex-end;
+	margin-top: 5vh;
+}
+.main_btn:hover {
+	animation: 0.5s ease 0s normal infinite none scale-down-center;
+	opacity: 1;
+}
+.left {
+	align-self: flex-start;
+}
+.order2 {
+	order: 2;
+}
+/* footer _____________________________________________________________________________________________________________________________________ */
+footer {
+	height: auto;
+}
+.footer-image {
+	z-index: 5;
+	position: absolute;
+	width: 100%;
+}
+.footer-info {
+	align-self: center;
+	z-index: 6;
+	height: 50%;
+	padding: 5% 15vh;
+}
+.footer-info img {
+	height: 75%;
+}
+footer a {
+	color: #ffffff;
+	font-size: 2rem;
+	text-decoration: none;
+	margin-left: 10%;
+}
+.footer-gmaps {
+	z-index: 6;
+	height: 60%;
+	padding: 5% 15vh 0% 15vh;
+}

@@ -1,0 +1,60 @@
+.primary {
+	color: #f8f7d3;
+}
+.secundary {
+	color: #fff;
+}
+.color-1 {
+	color: #ff9900;
+}
+.color-2 {
+	color: #f67305;
+}
+.color-3 {
+	color: #e83b0a;
+}
+.color-4 {
+	color: #c20c0e;
+}
+.primary-bg {
+	background-color: #f8f7d3;
+}
+.secundary-bg {
+	background-color: #fff;
+}
+.color-1-bg {
+	background-color: #ff9900;
+}
+.color-2-bg {
+	background-color: #f67305;
+}
+.color-3-bg {
+	background-color: #e83b0a;
+}
+.color-4-bg {
+	background-color: #c20c0e;
+}
+/* __________________________________________________________________________ */
+.font1 {
+	font-size: 4rem;
+}
+.header-info h1 {
+	font-size: 10rem;
+}
+.card p {
+	font-size: 2rem;
+	color: #fff;
+	margin: 0;
+}
+h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 0;
+}
+h2 {
+	font-size: 1.5rem;
+	margin: 0;
+}
+p {
+	font-size: 1.25rem;
+}
