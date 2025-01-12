@@ -126,3 +126,16 @@ nav {
 .rules-padding-bottom {
 	padding: 2.5vh 14vh 7vh 14vh;
 }
+.btn-contact {
+	padding: 2.5vh 5vw;
+	border-radius: 15px;
+	border: none;
+	margin: 5vh 0vh 0vh 0vh;
+	font-size: 1.5rem;
+}
+.btn-contact:hover {
+	animation-name: scale-down-center;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
