@@ -52,7 +52,7 @@ nav {
 }
 .route-info {
 	text-align: center;
-	z-index: 5;
+	z-index: 1;
 	height: 90%;
 	width: 100%;
 	display: flex;
@@ -70,4 +70,31 @@ nav {
 .sightseeing p {
 	margin: 0;
 	font-size: 1.5rem;
+}
+.route-beschrijving {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	opacity: 0;
+}
+.route-beschrijving:hover {
+	animation-name: change-opacity;
+	animation-duration: 1s;
+
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+
+.beschrijving-info {
+	position: relative;
+	padding: 10%;
+}
+@keyframes change-opacity {
+	0% {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }

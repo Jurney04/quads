@@ -120,9 +120,12 @@ h5 {
 	text-decoration: none;
 }
 .card:hover {
-	animation: 0.5s ease 0s normal infinite none scale-down-center;
-	opacity: 1;
+	animation-name: scale-down-center;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
 }
+
 .card img {
 	width: 7.5vh;
 }
