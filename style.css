@@ -93,6 +93,7 @@ nav a {
 	height: 90vh;
 	object-fit: cover;
 }
+
 h4 {
 	font-size: 8vh;
 	margin: 0;
@@ -171,6 +172,78 @@ h5 {
 .order2 {
 	order: 2;
 }
+/* ________________________________________________________________________ */
+.divi {
+	border: red solid 1px;
+}
+.gallery {
+	height: 60vh;
+	padding: 7.5vh 14vh 0vh 14vh;
+}
+.gallery-image-margin-right {
+	margin-right: 1vw;
+}
+.gallery-image-margin-bottom {
+	margin-bottom: 1vw;
+}
+.div-3 {
+	height: 30vh;
+	padding: 1vw 14vh 7.5vh 14vh;
+}
+
+.div-2 img {
+	width: auto;
+	object-fit: cover;
+	border-radius: 25px;
+	height: 100%;
+	overflow: hidden;
+	max-height: 48%;
+}
+.div-1 img {
+	width: auto;
+	object-fit: cover;
+	border-radius: 25px;
+	height: 100%;
+	overflow: hidden;
+}
+.div-3 img {
+	width: 32%;
+	object-fit: cover;
+	border-radius: 25px;
+	height: 100%;
+	overflow: hidden;
+}
+/* -------------------------------- */
+.div-1 {
+	width: 20%;
+}
+.div-1 img:nth-child(1) {
+	max-height: 25%;
+}
+.div-1 img:nth-child(2) {
+	max-height: 75%;
+}
+/* ------------------------------- */
+.div-2 {
+	width: 80%;
+	flex-wrap: wrap;
+}
+.div-2 img:nth-child(1) {
+	width: 40%;
+}
+.div-2 img:nth-child(2) {
+	width: 58%;
+}
+.div-2 img:nth-child(3) {
+	width: 32%;
+}
+.div-2 img:nth-child(4) {
+	width: 32%;
+}
+.div-2 img:nth-child(5) {
+	width: 32%;
+}
+
 /* footer _____________________________________________________________________________________________________________________________________ */
 footer {
 	height: auto;
