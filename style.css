@@ -48,8 +48,30 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 2vh 7.5%;
-	background-color: #ffffff80;
+	background-color: #ffffff;
 	height: 4vh;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 15;
+}
+#nav-bar {
+	background-color: #ffffff80;
+}
+.scrolled {
+	animation-name: opacity-full;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+}
+@keyframes opacity-full {
+	0% {
+		background-color: #ffffff80;
+	}
+	to {
+		background-color: #ffffff;
+	}
 }
 .nav-categories {
 	width: 35%;
