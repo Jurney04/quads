@@ -51,7 +51,7 @@ nav {
 	background-color: #ffffff;
 	height: 4vh;
 	position: fixed;
-	width: 100%;
+	width: 85%;
 	top: 0;
 	left: 0;
 	z-index: 15;
@@ -127,7 +127,7 @@ h5 {
 }
 .cards {
 	width: 71%;
-	height: 90vh;
+	height: 97.5vh;
 	justify-self: center;
 	margin-bottom: 2.5vh;
 }
@@ -291,4 +291,41 @@ footer a {
 	z-index: 6;
 	height: 60%;
 	padding: 5% 15vh 0% 15vh;
+}
+.pop-up {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: max-content;
+	height: max-content;
+	max-width: 40%;
+	padding: 5% 5%;
+	z-index: 20;
+	background-color: #ffffff;
+	border: #000 1px solid;
+	text-align: center;
+	vertical-align: middle;
+}
+.pop-up a {
+	color: #000;
+	font-size: 3rem;
+}
+.pop-up div {
+	width: 100%;
+	margin-top: 10%;
+	height: 10%;
+	justify-content: space-evenly;
+}
+.contact-logo {
+	object-fit: contain;
+	height: 100%;
+}
+#cross {
+	position: fixed;
+	top: 2vh;
+	right: 2vh;
+}
+.display-none {
+	display: none;
 }

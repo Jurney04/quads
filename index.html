@@ -25,7 +25,7 @@
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="#">Over ons</a>
-				<a href="#">Contact</a>
+				<a href="#" id="contactBTN">Contact</a>
 			</div>
 		</nav>
 		<div class="cards flex space-between">
@@ -139,6 +139,16 @@
 			</div>
 			<img src="images/maps.png" class="footer-gmaps " alt="">
 		</footer>
+		<div id="pop-up" class="pop-up flex colomn display-none">
+			<h1>
+				Contacteer ons op Whatsapp
+			</h1>
+			<div class="flex">
+				<img src="images/whatsapp-black.png" class="contact-logo" alt="" />
+				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+			</div>
+			<img src="images/cross.png" id="cross" alt="">
+		</div>
 		<script>
 			const navbar = document.getElementById('nav-bar');
 
@@ -149,6 +159,20 @@
 					navbar.classList.remove('scrolled');
 				}
 			});
+			let cross = document.getElementById("cross");
+			let popup = document.getElementById("pop-up");
+			let contactShow = document.querySelectorAll("#contactBTN");
+
+			// Loop through each element in the NodeList
+			contactShow.forEach(function(contactButton) {
+				contactButton.addEventListener("click", function(e) {
+					e.preventDefault();
+					popup.classList.remove("display-none");
+				});
+			});
+			cross.addEventListener("click",() => {
+				popup.classList.add("display-none")
+			})
 		</script>
 	</body>
 </html>
