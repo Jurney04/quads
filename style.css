@@ -335,6 +335,9 @@ footer a {
 	height: 10%;
 	justify-content: space-evenly;
 }
+.pop-up h2 {
+	font-size: 1rem;
+}
 .contact-logo {
 	object-fit: contain;
 	height: 100%;
