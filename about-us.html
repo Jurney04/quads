@@ -24,6 +24,11 @@
 			<div class="nav-us flex space-between">
 				<a href="about-us.html" class="underline">Over ons</a>
 				<a href="#" id="contactBTN">Contact</a>
+				<img src="images/nl-flag.png" id="language-flag" alt="">
+			</div>
+			<div id="language-menu" class="flex colomn space-between display-none">
+				<a href=""><img src="images/en-flag.png" class="flag" alt=""></a>
+				<a href=""><img src="images/fr-flag.png" class="flag" alt=""></a>
 			</div>
 		</nav>
 
@@ -101,6 +106,9 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
+			let language = document.getElementById("language-flag")
+			let languageMenu = document.getElementById("language-menu")
+			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -112,6 +120,17 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
+
+			language.addEventListener("click", function() {
+				if (languageClicked == false){
+					languageMenu.classList.remove("display-none");
+					languageClicked = true;
+				}else if (languageClicked ==true){
+					languageMenu.classList.add("display-none");
+					languageClicked = false;
+				}
+					
+				});
 		</script>
 	</body>
 </html>
