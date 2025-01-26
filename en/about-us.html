@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="colors.css" />
+		<link rel="stylesheet" href="quads.css" />
+		<title>Quad Adventures Murcia</title>
+		<link rel="icon" type="image/png" href="./../images/favicon.png" />
+	</head>
+	<body>
+		<nav>
+			<div class="flex name">
+				<img src="../images/logo.png" class="logo" alt="" />
+				<a href="en/index.html">Quadadventures <br />Murcia</a>
+			</div>
+			<div class="nav-categories flex space-between">
+				<a href="en/quads.html" >Quads</a>
+				<a href="en/buggy.html">Buggy</a>
+				<a href="#">E-scooter</a>
+				<a href="#">Combi</a>
+			</div>
+			<div class="nav-us flex space-between">
+				<a href="en/about-us.html" class="underline">Over ons</a>
+				<a href="#" id="contactBTN">Contact</a>
+				<img src="../images/nl-flag.png" id="language-flag" alt="">
+			</div>
+			<div id="language-menu" class="flex colomn space-between display-none">
+				<a href=""><img src="../images/en-flag.png" class="flag" alt=""></a>
+				<a href=""><img src="../images/fr-flag.png" class="flag" alt=""></a>
+			</div>
+		</nav>
+
+		<img src="../images/main-pic.jpg" alt="" class="title-card pic " />
+		<img src="../images/darken.png" alt="" class="title-card dark" />
+		<div class="flex header">
+			<div class="header-info secundary colomn flex space-between">
+				<h1>Over ons</h1>
+				<h3>
+					Leer meer over ons en wat we doen.
+				</h3>
+			</div>
+			<img src="../images/exclusion.png" alt="" class="exclusion" />
+		</div>
+		
+		<div class="flex space-between secundary-bg padding main_info">
+			<img src="../images/quads-at-night.jpg" alt="foto quad" class="main_img sec order2" />
+			<div class="text-width flex colomn">
+				<h2>ONS DOEL</h2>
+				<hr />
+				<p>
+					Door onze passie van het quad / buggy rijden hebben we besloten om onze ervaring door te geven aan anderen. Onze ritten beschikken over het maximale off road waardoor we jullie een belevenis kunnen geven met fenomenale uitzichten. Hierbij bieden we jullie op de stops een verfrissend drankje aan en ook een mogelijkheid tot het nemen van enkel foto's. Door onze voorafgaande professionele instructies moet je als onervaren bestuurder geen schrik hebben.
+					Door onze verschillende tour is er voor elk wat wils.
+				</p>
+			</div>
+		</div>
+		<!-- <div class="gallery flex primary-bg">
+			<div class="div-1 flex colomn space-between">
+				<img class="gallery-image-margin-right gallery-image-margin-bottom" src="../images/mountainview.jpg" alt="" />
+				<img class="gallery-image-margin-right" src="../images/quads-title-card-main.jpg" alt="" />
+			</div>
+			<div class="div-2 flex space-between">
+				<img class="gallery-image-margin-right gallery-image-margin-bottom" src="../images/pov.jpeg" alt="" />
+				<img class="gallery-image-margin-bottom" src="../images/sunset.jpg" alt="" />
+				<img class="" src="../images/quads-row.jpg" alt="" />
+				<img class="" src="../images/quad2.png" alt="" />
+				<img class="" src="../images/wilderness.jpeg" alt="" />
+			</div>
+		</div>
+		<div class="div-3 flex primary-bg space-between">
+			<img class="" src="../images/sundown.jpg" alt="" />
+			<img class="" src="../images/drone-shot.jpeg" alt="" />
+			<img class="" src="../images/quads-preview.jpg" alt="" />
+		</div> -->
+		<!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
+		<footer class="flex space-between">
+			<img src="../images/footer-image.png" class="footer-image" alt="" />
+			<div class="flex space-between colomn footer-info ">
+				<div class="flex">
+					<img src="../images/whatsapp.png" class="footer-logo" alt="" />
+					<a href="https://wa.me/32474508415" target="blank">+34 614 33 64 16</a>
+				</div>
+				<div class="flex">
+					<img src="../images/facebook.png" class="footer-logo" alt="" />
+					<a href="https://www.facebook.com/quadadventures.murcia/">quadadventures.murcia</a>
+				</div>
+				<div class="flex "">
+					<img src="../images/insta.png" class="footer-logo" alt="" />
+					<a href="https://www.instagram.com/quad.adventuresmurcia/">quad.adventuresmurcia</a>
+				</div>
+			</div>
+			<img src="../images/maps.png" class="footer-gmaps " alt="">
+		</footer>
+		<div id="pop-up" class="pop-up flex colomn display-none">
+			<h1>
+				Contacteer ons op Whatsapp
+			</h1>
+			<div class="flex">
+				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
+				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+			</div>
+			<img src="../images/cross.png" id="cross" alt="">
+		</div>
+		<script>
+			let cross = document.getElementById("cross");
+			let popup = document.getElementById("pop-up");
+			let contactShow = document.querySelectorAll("#contactBTN");
+			let language = document.getElementById("language-flag")
+			let languageMenu = document.getElementById("language-menu")
+			let languageClicked = false;
+
+			// Loop through each element in the NodeList
+			contactShow.forEach(function(contactButton) {
+				contactButton.addEventListener("click", function(e) {
+					e.preventDefault();
+					popup.classList.remove("display-none");
+				});
+			});
+			cross.addEventListener("click",() => {
+				popup.classList.add("display-none")
+			})
+
+			language.addEventListener("click", function() {
+				if (languageClicked == false){
+					languageMenu.classList.remove("display-none");
+					languageClicked = true;
+				}else if (languageClicked ==true){
+					languageMenu.classList.add("display-none");
+					languageClicked = false;
+				}
+					
+				});
+		</script>
+	</body>
+</html>
