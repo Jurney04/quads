@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="colors.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../colors.css" />
 		<title>Quad Adventures Murcia</title>
 		<link rel="icon" type="image/png" href="./../images/favicon.png" />
 	</head>
@@ -167,6 +167,9 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
+			let language = document.getElementById("language-flag")
+			let languageMenu = document.getElementById("language-menu")
+			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {

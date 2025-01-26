@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="colors.css" />
-		<link rel="stylesheet" href="quads.css" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../colors.css" />
+		<link rel="stylesheet" href="../quads.css" />
 		<title>Quad Adventures Murcia</title>
 		<link rel="icon" type="image/png" href="./../images/favicon.png" />
 	</head>
@@ -13,16 +13,16 @@
 		<nav>
 			<div class="flex name">
 				<img src="../images/logo.png" class="logo" alt="" />
-				<a href="en/index.html">Quadadventures <br />Murcia</a>
+				<a href="/index.html">Quadadventures <br />Murcia</a>
 			</div>
 			<div class="nav-categories flex space-between">
-				<a href="en/quads.html" class="underline">Quads</a>
-				<a href="en/buggy.html">Buggy</a>
+				<a href="quads.html" class="underline">Quads</a>
+				<a href="buggy.html">Buggy</a>
 				<a href="#">E-scooter</a>
 				<a href="#">Combi</a>
 			</div>
 			<div class="nav-us flex space-between">
-				<a href="en/about-us.html" >Over ons</a>
+				<a href="about-us.html" >Over ons</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<img src="../images/en-flag.png" id="language-flag" alt="">
 			</div>
@@ -309,6 +309,9 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
+			let language = document.getElementById("language-flag")
+			let languageMenu = document.getElementById("language-menu")
+			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
