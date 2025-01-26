@@ -40,7 +40,7 @@
 	font-size: 4rem;
 }
 .header-info h1 {
-	font-size: 10rem;
+	font-size: 10vw;
 }
 .underline {
 	text-decoration: underline;
@@ -70,7 +70,7 @@ h2 {
 	font-style: normal;
 }
 p {
-	font-size: 1.25rem;
+	font-size: 1.25vw;
 	font-family: lft-etica, sans-serif;
 	font-weight: 400;
 	font-style: normal;

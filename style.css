@@ -4,7 +4,6 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #f8f7d3;
-
 	display: grid;
 }
 .grid {
@@ -78,19 +77,23 @@ nav {
 	justify-content: space-evenly;
 }
 .nav-us {
-	width: 15%;
+	width: max-content;
+	a
+}
+.nav-us a {
+	margin: 0.5vh 1vw;
+	max-width: max-content;
 }
 nav a {
 	color: black;
 	text-decoration: none;
-	font-size: 1.25rem;
+	font-size: 1.25vw;
 	font-weight: 700;
-	vertical-align: middle;
+	align-self: center;
 	margin: 0;
 }
-.nav-categories a,
-.nav-us a {
-	margin-top: 1vh;
+.nav-categories a {
+	margin-top: 0.5vh;
 }
 .nav-categories a:hover {
 	text-decoration: underline;
@@ -107,8 +110,9 @@ nav a {
 	justify-content: space-between;
 }
 #language-flag {
-	height: 75%;
-	transform: translateY(25%);
+	height: 50%;
+	width: auto;
+	transform: translateY(50%);
 	object-fit: contain;
 }
 #language-menu {
@@ -118,10 +122,12 @@ nav a {
 	height: 8vh;
 	background-color: #ffffff;
 	padding: 1%;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 .flag {
 	height: 100%;
-	width: 2.25vw;
+	width: 1.75vw;
 	object-fit: cover;
 }
 /* ____________________________________________________________________________________________________________________________________ */
@@ -283,32 +289,38 @@ h5 {
 
 /* footer _____________________________________________________________________________________________________________________________________ */
 footer {
-	height: auto;
+	height: max-content;
+	padding: 2.5vh 14vh;
+	background-image: url(images/footer-image.png);
+	background-position-y: 25%;
+	background-position-x: 30%;
 }
-.footer-image {
-	z-index: 5;
-	position: absolute;
-	width: 100%;
-}
+
 .footer-info {
 	align-self: center;
 	z-index: 6;
-	height: 50%;
-	padding: 5% 15vh;
+	height: 100%;
 }
-.footer-info img {
-	height: 75%;
+.footer-info div {
+	margin: 5% 0;
+	height: 2rem;
+}
+.footer-logo {
+	height: 100%;
+	object-fit: contain;
 }
 footer a {
 	color: #ffffff;
-	font-size: 2rem;
+	font-size: 1.5vw;
 	text-decoration: none;
-	margin-left: 10%;
+	margin-left: 5%;
+	width: 100%;
+	align-self: center;
 }
 .footer-gmaps {
 	z-index: 6;
-	height: 60%;
-	padding: 5% 15vh 0% 15vh;
+	height: 20vh;
+	align-self: center;
 }
 .pop-up {
 	position: fixed;
@@ -349,4 +361,12 @@ footer a {
 }
 .display-none {
 	display: none;
+}
+@media screen and (max-width: 768px) {
+	#nav-bar {
+		display: none;
+	}
+	#nav-mobile{
+		display: flex;
+	}
 }
