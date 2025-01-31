@@ -58,12 +58,7 @@ nav {
 #nav-bar {
 	background-color: #ffffff80;
 }
-.scrolled {
-	animation-name: opacity-full;
-	animation-duration: 3s;
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
-}
+
 @keyframes opacity-full {
 	0% {
 		background-color: #ffffff80;
@@ -78,7 +73,6 @@ nav {
 }
 .nav-us {
 	width: max-content;
-	a
 }
 .nav-us a {
 	margin: 0.5vh 1vw;
@@ -110,18 +104,25 @@ nav a {
 	justify-content: space-between;
 }
 #language-flag {
-	height: 50%;
-	width: auto;
-	transform: translateY(50%);
+	height: min-content;
+
+	align-self: center;
+}
+#language-flag img {
+	height: auto;
 	object-fit: contain;
+}
+
+#language-flag a {
+	margin: 0vh 0.5vw;
 }
 #language-menu {
 	position: fixed;
-	right: 6.5%;
-	top: 6vh;
+	right: 7%;
+	top: 8vh;
 	height: 8vh;
-	background-color: #ffffff;
-	padding: 1%;
+	background-color: #ffffff80;
+	padding: 0% 2.25% 1% 1%;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
@@ -129,6 +130,12 @@ nav a {
 	height: 100%;
 	width: 1.75vw;
 	object-fit: cover;
+}
+.scrolled {
+	animation-name: opacity-full;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
 }
 /* ____________________________________________________________________________________________________________________________________ */
 .pic {
@@ -366,7 +373,7 @@ footer a {
 	#nav-bar {
 		display: none;
 	}
-	#nav-mobile{
+	#nav-mobile {
 		display: flex;
 	}
 }

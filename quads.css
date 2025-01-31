@@ -4,6 +4,9 @@ h3 {
 nav {
 	background-color: #fff;
 }
+#language-menu {
+	background-color: #ffffff;
+}
 .title-card {
 	width: 100%;
 	top: 0;
@@ -47,7 +50,7 @@ nav {
 	width: 100%;
 }
 .routes {
-	height: 50vh;
+	height: 60vh;
 	width: 25%;
 	border: red 5px solid;
 	border-radius: 35px;

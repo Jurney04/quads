@@ -26,14 +26,18 @@
 			<div class="nav-us flex space-between">
 				<a href="en/about-us.html">About us</a>
 				<a href="#" id="contactBTN">Contact</a>
-				<img src="images/en-flag.png" id="language-flag" alt="">
+				<div id="language-flag" class="flex">
+					<a href="" id=""">EN</a>
+					<img src="../images/arrow.png" alt="">
+				</div>
+				
 			</div>
 			<div id="language-menu" class="flex colomn space-between display-none">
-				<a href="nl/index.html"><img src="images/nl-flag.png" class="flag" alt=""></a>
-				<a href="fr/index.html"><img src="images/fr-flag.png" class="flag" alt=""></a>
+				<a href="nl/index.html">NL</a>
+				<a href="fr/index.html">FR</a>
 			</div>
 		</nav>
-		<nav id="nav-mobile">
+		<nav id="nav-mobile" class="display-none">
 			<img src="images/logo.png" class="logo" alt="" />
 		</nav>
 		<div class="cards flex space-between">
@@ -153,11 +157,14 @@ Contact us on Whatsapp
 		</div>
 		<script>
 			const navbar = document.getElementById('nav-bar');
+
 			window.addEventListener('scroll', () => {
 				if (window.scrollY > 50) { // Adjust this value based on when you want the color to change
 					navbar.classList.add('scrolled');
+					languageMenu.classList.add('scrolled');
 				} else {
 					navbar.classList.remove('scrolled');
+					languageMenu.classList.remove('scrolled');
 				}
 			});
 			let cross = document.getElementById("cross");
@@ -178,7 +185,8 @@ Contact us on Whatsapp
 				popup.classList.add("display-none")
 			})
 
-			language.addEventListener("click", function() {
+			language.addEventListener("click", function(e) {
+				e.preventDefault()
 				if (languageClicked == false){
 					languageMenu.classList.remove("display-none");
 					languageClicked = true;
