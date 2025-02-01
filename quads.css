@@ -37,6 +37,7 @@ nav {
 	position: absolute;
 	height: 50%;
 	padding-top: 10%;
+	max-width: 50%;
 }
 /* _______________________________________________________________________________________________________ */
 .main_img {
@@ -50,7 +51,7 @@ nav {
 	width: 100%;
 }
 .routes {
-	height: 60vh;
+	height: 62.5vh;
 	width: 25%;
 	border: red 5px solid;
 	border-radius: 35px;

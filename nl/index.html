@@ -20,21 +20,19 @@
 			<div class="nav-categories flex space-between">
 				<a href="quads.html">Quads</a>
 				<a href="buggy.html">Buggy</a>
-				<a href="#">E-scooter</a>
-				<a href="#">Combi</a>
+				<a href="e-scooter.html">E-step</a>
+				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="about-us.html">Over ons</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<div id="language-flag" class="flex">
-					<a href="" id=""">NL</a>
-					<img src="../images/arrow.png" alt="">
+					<a href="" class="underline">NL</a>
+					<a href="../index.html">EN</a>
+					<a href="../fr/index.html">FR</a>
 				</div>
 			</div>
-			<div id="language-menu" class="flex colomn space-between display-none">
-				<a href="../index.html">EN</a>
-				<a href="../fr/index.html">FR</a>
-			</div>
+				
 		</nav>
 		<div class="cards flex space-between">
 			<a href="quads.html" class="card color-1-bg">
@@ -48,12 +46,12 @@
 			</a>
 			<a href="#" class="card color-3-bg">
 				<img src="../images/scooter.png" alt="" />
-				<p>E-scooter</p>
+				<p>E-step</p>
 			</a>
-			<a href="#" class="card color-4-bg">
+			<!-- <a href="#" class="card color-4-bg">
 				<img src="../images/combine.png" alt="" />
 				<p>Combi</p>
-			</a>
+			</a> -->
 		</div>
 		<!-- start of page ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		<div class="flex space-between padding main_info">
@@ -102,7 +100,7 @@
 		<div class="flex space-between padding main_info secundary-bg">
 			<img src="../images/quad2.png" alt="foto quad" class="main_img" />
 			<div class="text-width flex colomn">
-				<h1>E-scooter</h1>
+				<h1>E-step</h1>
 				<h2>Rijd nu rond de stad</h2>
 				<hr />
 				<p>
@@ -112,7 +110,7 @@
 				<a href="#" class="color-3-bg main_btn secundary">Lees meer --></a>
 			</div>
 		</div>
-		<div class="flex space-between padding main_info">
+		<!-- <div class="flex space-between padding main_info">
 			<img src="../images/quad2.png" alt="foto quad" class="main_img order2" />
 			<div class="text-width flex colomn">
 				<h1>Combinatie</h1>
@@ -125,9 +123,9 @@
 
 					Wil je eens rijden op een quad, buggy en boot. Dan is deze keuze voor jou.
 				</p>
-				<a href="#" class="color-4-bg main_btn secundary left">Lees meer --></a>
+				<a href="#" class="color-4-bg main_btn secundary left">Lees meer </a>
 			</div>
-		</div>
+		</div> -->
 		<!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
 		<footer class="flex space-between">
 			
@@ -172,9 +170,6 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -186,18 +181,6 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
-
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
 		</script>
 	</body>
 </html>

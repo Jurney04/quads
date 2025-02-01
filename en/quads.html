@@ -19,19 +19,16 @@
 				<a href="quads.html" class="underline">Quads</a>
 				<a href="buggy.html">Buggy</a>
 				<a href="e-scooter.html">E-scooter</a>
-				<a href="#">Combi</a>
+				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="about-us.html" >About us</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<div id="language-flag" class="flex">
-					<a href="" id=""">EN</a>
-					<img src="../images/arrow.png" alt="">
+					<a href="" class="underline">EN</a>
+					<a href="../nl/quads.html">NL</a>
+					<a href="../fr/quads.html">FR</a>
 				</div>
-			</div>
-			<div id="language-menu" class="flex colomn space-between display-none">
-				<a href="../nl/quads.html">NL</a>
-				<a href="../fr/quads.html">FR</a>
 			</div>
 		</nav>
 
@@ -119,7 +116,7 @@
 					</div>
 				</div>
 			</div>
-			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contacteer ons</button>
+			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contact us</button>
 		</div>
 		<div class="flex space-between primary-bg padding main_info">
 			<img src="../images/quads-preview.jpg" alt="foto quad" class="main_img sec order2" />
@@ -144,7 +141,7 @@
 					</div>
 					<div class="rule flex">
 						<img src="../images/checkmark.png" class="icon" alt="" />
-						<p>Safety glasses</p>
+						<p>Helmet</p>
 					</div>
 					<div class="rule flex">
 						<img src="../images/checkmark.png" class="icon" alt="" />
@@ -312,9 +309,6 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -326,18 +320,6 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
-
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
 		</script>
 	</body>
 </html>

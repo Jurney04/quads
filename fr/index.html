@@ -21,7 +21,7 @@
 				<a href="quads.html">Quads</a>
 				<a href="buggy.html">Buggy</a>
 				<a href="#">E-scooter</a>
-				<a href="#">Combi</a>
+				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="about-us.html">À propos de nous</a>
@@ -50,10 +50,10 @@
 				<img src="../images/scooter.png" alt="" />
 				<p>E-scooter</p>
 			</a>
-			<a href="#" class="card color-4-bg">
+			<!-- <a href="#" class="card color-4-bg">
 				<img src="../images/combine.png" alt="" />
 				<p>Combi</p>
-			</a>
+			</a> -->
 		</div>
 		<!-- start of page ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		<div class="flex space-between padding main_info">
@@ -105,7 +105,7 @@
 				<a href="#" class="color-3-bg main_btn secundary">Lees meer --></a>
 			</div>
 		</div>
-		<div class="flex space-between padding main_info">
+		<!-- <div class="flex space-between padding main_info">
 			<img src="../images/quad2.png" alt="foto quad" class="main_img order2" />
 			<div class="text-width flex colomn">
 				<h1>Combinaison</h1>
@@ -117,7 +117,7 @@
 					Vous souhaitez faire du quad, du buggy et du bateau ? Alors ce choix est fait pour vous.				</p>
 				<a href="#" class="color-4-bg main_btn secundary left">Lees meer --></a>
 			</div>
-		</div>
+		</div> -->
 		<!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
 		<footer class="flex space-between">
 			
@@ -140,9 +140,9 @@
 		</footer>
 		<div id="pop-up" class="pop-up flex colomn display-none">
 			<h1>
-Contactez-nous sur Whatsapp
-</h1>
-<h2>(Pendant les trajets, nous sommes difficiles à joindre, envoyez un SMS si nécessaire)</h2>
+			Contactez-nous sur Whatsapp
+			</h1>
+			<h2>(Pendant les trajets, nous sommes difficiles à joindre, envoyez un SMS si nécessaire)</h2>
 			<div class="flex">
 				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
 				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
@@ -162,9 +162,6 @@ Contactez-nous sur Whatsapp
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -176,18 +173,6 @@ Contactez-nous sur Whatsapp
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
-
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
 		</script>
 	</body>
 </html>

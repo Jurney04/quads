@@ -18,20 +18,17 @@
 			<div class="nav-categories flex space-between">
 				<a href="quads.html" >Quads</a>
 				<a href="buggy.html">Buggy</a>
-				<a href="#">E-scooter</a>
-				<a href="#">Combi</a>
+				<a href="e-scooter.html">E-step</a>
+				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="about-us.html" class="underline">Over ons</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<div id="language-flag" class="flex">
-					<a href="" id=""">NL</a>
-					<img src="../images/arrow.png" alt="">
+					<a href="" class="underline">NL</a>
+					<a href="../en/about-us.html">EN</a>
+					<a href="../fr/about-us.html">FR</a>
 				</div>
-			</div>
-			<div id="language-menu" class="flex colomn space-between display-none">
-				<a href="../en/about-us.html">EN</a>
-				<a href="../fr/about-us.html">FR</a>
 			</div>
 		</nav>
 
@@ -111,9 +108,6 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -125,18 +119,6 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
-
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
 		</script>
 	</body>
 </html>

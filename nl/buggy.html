@@ -18,24 +18,21 @@
 			<div class="nav-categories flex space-between">
 				<a href="quads.html">Quads</a>
 				<a href="buggy.html" class="underline">Buggy</a>
-				<a href="#">E-scooter</a>
-				<a href="#">Combi</a>
+				<a href="e-scooter.html">E-step</a>
+				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="about-us.html">Over ons</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<div id="language-flag" class="flex">
-					<a href="" id=""">NL</a>
-					<img src="../images/arrow.png" alt="">
+					<a href="" class="underline">NL</a>
+					<a href="../en/buggy.html">EN</a>
+					<a href="../fr/buggy.html">FR</a>
 				</div>
-			</div>
-			<div id="language-menu" class="flex colomn space-between display-none">
-				<a href="../en/buggy.html">EN</a>
-				<a href="../fr/buggy.html">FR</a>
 			</div>
 		</nav>
 
-		<img src="../images" alt="" class="title-card" />
+		<img src="../images/buggy-sunset.jpg" alt="" class="title-card" />
 		<img src="../images/darken.png" alt="" class="title-card dark" />
 		<div class="flex header">
 			<div class="header-info secundary colomn flex space-between">
@@ -308,9 +305,6 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -322,18 +316,6 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
-
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
 		</script>
 	</body>
 </html>

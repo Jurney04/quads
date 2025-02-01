@@ -21,20 +21,17 @@
 				<a href="en/quads.html">Quads</a>
 				<a href="en/buggy.html">Buggy</a>
 				<a href="en/e-scooter.html">E-scooter</a>
-				<a href="#">Combi</a>
+				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex space-between">
 				<a href="en/about-us.html">About us</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<div id="language-flag" class="flex">
-					<a href="" id=""">EN</a>
-					<img src="../images/arrow.png" alt="">
+					<a href="">EN</a>
+					<a href="nl/index.html">NL</a>
+					<a href="fr/index.html">FR</a>
 				</div>
 				
-			</div>
-			<div id="language-menu" class="flex colomn space-between display-none">
-				<a href="nl/index.html">NL</a>
-				<a href="fr/index.html">FR</a>
 			</div>
 		</nav>
 		<nav id="nav-mobile" class="display-none">
@@ -54,10 +51,10 @@
 				<img src="images/scooter.png" alt="" />
 				<p>E-scooter</p>
 			</a>
-			<a href="#" class="card color-4-bg">
+			<!-- <a href="#" class="card color-4-bg">
 				<img src="images/combine.png" alt="" />
 				<p>Combi</p>
-			</a>
+			</a> -->
 		</div>
 		<!-- start of page ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 		<div class="flex space-between padding main_info">
@@ -112,7 +109,7 @@
 				<a href="en/e-scooter.html" class="color-3-bg main_btn secundary">Lees meer --></a>
 			</div>
 		</div>
-		<div class="flex space-between padding main_info">
+		<!-- <div class="flex space-between padding main_info">
 			<img src="images/quad2.png" alt="foto quad" class="main_img order2" />
 			<div class="text-width flex colomn">
 				<h1>Combinatie</h1>
@@ -123,9 +120,9 @@
 					If you take this choice, you can choose which activities you want to do. <br /><br />
 					Would you like to ride a quad, buggy and boat. Then this choice is for you.
 				</p>
-				<a href="#" class="color-4-bg main_btn secundary left">Lees meer --></a>
+				<a href="#" class="color-4-bg main_btn secundary left">Lees meer</a>
 			</div>
-		</div>
+		</div> -->
 		<!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
 		<footer class="flex space-between">
 			<div class="flex space-between colomn footer-info ">
@@ -170,9 +167,6 @@
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -184,18 +178,6 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
-
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
 		</script>
 	</body>
 </html>
