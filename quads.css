@@ -4,9 +4,6 @@ h3 {
 nav {
 	background-color: #fff;
 }
-#language-menu {
-	background-color: #ffffff;
-}
 .title-card {
 	width: 100%;
 	top: 0;
@@ -38,6 +35,9 @@ nav {
 	height: 50%;
 	padding-top: 10%;
 	max-width: 50%;
+}
+.mobile {
+	display: none;
 }
 /* _______________________________________________________________________________________________________ */
 .main_img {
@@ -186,4 +186,108 @@ nav {
 	object-fit: cover;
 	z-index: 0;
 	top: 0;
+}
+@media screen and (max-width: 768px) {
+	.title-card {
+		height: 90vh;
+	}
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.exclusion {
+		top: 8vh;
+		width: 100%;
+		position: relative;
+	}
+	.header {
+		justify-content: center;
+		vertical-align: middle;
+		display: grid;
+		position: relative;
+		height: 90vh;
+		margin-bottom: 7.5vh;
+	}
+	.header-info {
+		height: 50%;
+		padding-top: 50%;
+		max-width: 80%;
+	}
+
+	.all-routes {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+	.all-routes h3 {
+		margin-bottom: 5vh;
+	}
+	.routes {
+		height: 32.5vh;
+		width: 100%;
+		margin-bottom: 5vh;
+	}
+	.route-info {
+		text-align: center;
+		padding: 5% 2.5% 0 2.5%;
+	}
+	.route-info h1 {
+		font-size: 12.5vw;
+	}
+	.route-info h2 {
+		font-size: 5vw;
+		margin-top: 0;
+	}
+	.route-info p {
+		font-size: 4.5vw;
+	}
+	.sightseeing p {
+		margin: -2.5% 0 0 0;
+		font-size: 7.5vw;
+	}
+
+	.route-beschrijving {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		opacity: 0;
+	}
+	.beschrijving-info {
+		position: relative;
+		padding: 10%;
+	}
+	.beschrijving-info h1 {
+		font-size: 7.5vw;
+	}
+	.beschrijving-info p {
+		font-size: 3.5vw;
+	}
+	.btn-contact {
+		margin-top: 0vh;
+		padding: 1.5vh 15vw;
+	}
+	.icon {
+		object-fit: contain;
+		margin-right: 0.5vw;
+		width: 1vw;
+	}
+	.rule p {
+		margin: 1vh;
+		font-size: 1rem;
+	}
+	.small-font {
+		font-size: 0.75rem;
+	}
+	.rule-align {
+		width: 50vw;
+	}
+	.rules-padding-top {
+		padding: 7vh 5vh 2.5vh 5vh;
+	}
+	.rules-padding-bottom {
+		padding: 2.5vh 14vh 7vh 14vh;
+	}
 }
