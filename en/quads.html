@@ -285,6 +285,144 @@
 				</div>
 			</div>
 		</div>
+		<div class="mobile secundary-bg padding">
+			<div id="rule1" class="flex space-between rules">
+				<h2 >INCL. DURING THE RIDE</h2>
+				<img src="../images/arrow.png" id="rule1-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule1-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Guide(s) speak NL | EN | FR</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Helmet</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Bandana</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Refreshing drink(s) <span class="small-font"> (except for the 1h route)</span></p>
+				</div>
+			</div>
+			<div id="rule2" class="flex space-between rules">
+				<h2>WHEN REGISTERING THE RIDE</h2>
+				<img src="../images/arrow.png"  id="rule2-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule2-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Register at least 30 min before the start of the tour</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Show ID card</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Show driving licence</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Please sign for participation</p>
+				</div>
+			</div>
+			<div id="rule3" class="flex space-between rules">
+				<h2>DURING THE RIDE</h2>
+				<img src="../images/arrow.png" id="rule3-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule3-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Changing drivers during the journey is impossible</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>
+						Use of electronic devices (mobile phone, camera, earphones) <br />
+						is not allowed.
+					</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>No alcohol/drugs.</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>No smoking during the entire ride and intermediate stops.</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Prohibited throwing rubbish on the ground during stopovers.</p>
+				</div>
+			</div>
+			<div id="rule4" class="flex space-between rules">
+				<h2>IMPORTANT INFORMATION</h2>
+				<img src="../images/arrow.png" id="rule4-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule4-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Rental of up to 4 quads and can be combined with max 2 buggy's</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Children between 7-18 years ride along as a passenger (also possible with a supervisor)</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Permitted weight per quad: 150kg</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Not suitable for pregnant women</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Quadventures-Murcia is not responsible for the loss of personal items</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Maximum of 2 people per quad</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>We abide by the highway code</p>
+				</div>
+			</div>
+			<div id="rule5" class="flex space-between rules">
+				<h2>RECOMMENDED</h2>
+				<img src="../images/arrow.png" id="rule5-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule5-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Comfortable clothing</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Sun protection</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Sunglasses</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Good shoes (no flip-flops)</p>
+				</div>
+			</div>
+			
+
+		</div>
 		<div class="gallery flex primary-bg desktop" >
 			<div class="div-1 flex colomn space-between">
 				<img class="gallery-image-margin-right gallery-image-margin-bottom" src="../images/mountainview.jpg" alt="" />
@@ -347,6 +485,105 @@
 			});
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
+			})
+
+			let navCross = document.getElementById("nav-cross")
+			let hamburger = document.getElementById("hamburger")
+			let navFull = document.getElementById("nav-full-mobile")
+
+			hamburger.addEventListener('click' , () => {
+				navFull.classList.remove("display-none")
+				navCross.classList.remove("display-none")
+				hamburger.classList.add("display-none")
+
+			})
+			navCross.addEventListener('click' , () => {
+				navFull.classList.add("display-none")
+				navCross.classList.add("display-none")
+				hamburger.classList.remove("display-none")
+
+			})
+
+			let rule1 = document.getElementById("rule1")
+			let rule1Menu = document.getElementById("rule1-menu")
+			let rule1Arrow = document.getElementById("rule1-arrow")
+			let rule1Shown = "false"
+			
+			let rule2= document.getElementById("rule2")
+			let rule2Menu = document.getElementById("rule2-menu")
+			let rule2Arrow = document.getElementById("rule2-arrow")
+			let rule2Shown = "false"
+			
+			let rule3 = document.getElementById("rule3")
+			let rule3Menu = document.getElementById("rule3-menu")
+			let rule3Arrow = document.getElementById("rule3-arrow")
+			let rule3Shown = "false"
+			
+			let rule4= document.getElementById("rule4")
+			let rule4Menu = document.getElementById("rule4-menu")
+			let rule4Arrow = document.getElementById("rule4-arrow")
+			let rule4Shown = "false"
+			
+			let rule5 = document.getElementById("rule5")
+			let rule5Menu = document.getElementById("rule5-menu")
+			let rule5Arrow = document.getElementById("rule5-arrow")
+			let rule5Shown = "false"
+			
+
+			rule1.addEventListener('click' , () => {
+				if(rule1Shown == "false"){
+					rule1Menu.classList.remove("display-none")
+					rule1Arrow.style.transform = 'rotate(180deg)';
+					rule1Shown = "true"
+				}else if(rule1Shown == "true"){
+					rule1Menu.classList.add("display-none")
+					rule1Arrow.style.transform = 'rotate(0)';
+					rule1Shown = "false"
+				}
+			})
+			rule2.addEventListener('click' , () => {
+				if(rule2Shown == "false"){
+					rule2Menu.classList.remove("display-none")
+					rule2Arrow.style.transform = 'rotate(180deg)';
+					rule2Shown = "true"
+				}else if(rule2Shown == "true"){
+					rule2Menu.classList.add("display-none")
+					rule2Arrow.style.transform = 'rotate(0)';
+					rule2Shown = "false"
+				}
+			})
+			rule3.addEventListener('click' , () => {
+				if(rule3Shown == "false"){
+					rule3Menu.classList.remove("display-none")
+					rule3Arrow.style.transform = 'rotate(180deg)';
+					rule3Shown = "true"
+				}else if(rule3Shown == "true"){
+					rule3Menu.classList.add("display-none")
+					rule3Arrow.style.transform = 'rotate(0)';
+					rule3Shown = "false"
+				}
+			})
+			rule4.addEventListener('click' , () => {
+				if(rule4Shown == "false"){
+					rule4Menu.classList.remove("display-none")
+					rule4Arrow.style.transform = 'rotate(180deg)';
+					rule4Shown = "true"
+				}else if(rule4Shown == "true"){
+					rule4Menu.classList.add("display-none")
+					rule4Arrow.style.transform = 'rotate(0)';
+					rule4Shown = "false"
+				}
+			})
+			rule5.addEventListener('click' , () => {
+				if(rule5Shown == "false"){
+					rule5Menu.classList.remove("display-none")
+					rule5Arrow.style.transform = 'rotate(180deg)';
+					rule5Shown = "true"
+				}else if(rule5Shown == "true"){
+					rule5Menu.classList.add("display-none")
+					rule5Arrow.style.transform = 'rotate(0)';
+					rule5Shown = "false"
+				}
 			})
 		</script>
 	</body>

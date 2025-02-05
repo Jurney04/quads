@@ -272,7 +272,7 @@ nav {
 	.icon {
 		object-fit: contain;
 		margin-right: 0.5vw;
-		width: 1vw;
+		width: 5vw;
 	}
 	.rule p {
 		margin: 1vh;
@@ -284,10 +284,10 @@ nav {
 	.rule-align {
 		width: 50vw;
 	}
-	.rules-padding-top {
-		padding: 7vh 5vh 2.5vh 5vh;
+	.rules img {
+		object-fit: contain;
 	}
-	.rules-padding-bottom {
-		padding: 2.5vh 14vh 7vh 14vh;
+	.rules {
+		margin-top: 5vh;
 	}
 }

@@ -377,6 +377,7 @@ footer a {
 		width: 80%;
 		background-color: #ffffff;
 		padding: 25% 10%;
+		z-index: 10;
 	}
 	#nav-full-mobile a {
 		color: #000;
@@ -490,5 +491,43 @@ footer a {
 	footer a {
 		font-size: 6vw;
 		margin-left: 2.5%;
+	}
+
+	.pop-up {
+		position: fixed;
+		top: 0;
+		left: 0%;
+		transform: translate(0%, 0%);
+		height: 100%;
+		max-width: 86%;
+		padding: 20% 7.5%;
+		z-index: 20;
+		background-color: #ffffff;
+		border: #000 1px none;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.pop-up a {
+		color: #000;
+		font-size: 2rem;
+	}
+	.pop-up div {
+		width: 100%;
+		margin-top: 10%;
+		height: 5%;
+		justify-content: space-evenly;
+	}
+	.pop-up h2 {
+		font-size: 1rem;
+	}
+	.contact-logo {
+		object-fit: contain;
+		height: 100%;
+	}
+	#cross {
+		position: fixed;
+		top: 2vh;
+		right: 7.5%;
+		height: 4vh;
 	}
 }
