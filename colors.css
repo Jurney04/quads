@@ -82,3 +82,12 @@ hr {
 	width: 100%;
 	border-width: 0;
 }
+@media screen and (max-width: 768px) {
+	p {
+		font-size: 5vw;
+	}
+	a {
+		font-size: 5vw;
+		text-decoration: none;
+	}
+}

@@ -35,8 +35,30 @@
 			</div>
 		</nav>
 		<nav id="nav-mobile" class="display-none">
-			<img src="images/logo.png" class="logo" alt="" />
+			<div class="flex name">
+				<img src="images/logo.png" class="logo" alt="" />
+				<a href="index.html">Quadadventures <br />Murcia</a>
+			</div>
+			<img src="images/hamburger.png" id="hamburger" alt="">
+			<img src="images/cross.png" id="nav-cross" class="display-none" alt="">
 		</nav>
+		<div id="nav-full-mobile" class="display-none">
+			<div class="nav-categories flex colomn space-between">
+				<a href="en/quads.html">Quads</a>
+				<a href="en/buggy.html">Buggy</a>
+				<a href="en/e-scooter.html">E-scooter</a>
+				<!-- <a href="#">Combi</a> -->
+			</div>
+			<div class="nav-us flex colomn space-between">
+				<a href="en/about-us.html">About us</a>
+				<a href="#" id="contactBTN">Contact</a>
+			</div>
+			<div id="language-flag" class="flex space-evenly">
+				<a href="" class="underline">EN</a>
+				<a href="nl/index.html">NL</a>
+				<a href="fr/index.html">FR</a>
+			</div>
+		</div>
 		<div class="cards flex space-between">
 			<a href="en/quads.html" class="card color-1-bg">
 				<img src="images/quads.png" alt="" />
@@ -177,6 +199,24 @@
 			});
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
+			})
+
+
+			let navCross = document.getElementById("nav-cross")
+			let hamburger = document.getElementById("hamburger")
+			let navFull = document.getElementById("nav-full-mobile")
+
+			hamburger.addEventListener('click' , () => {
+				navFull.classList.remove("display-none")
+				navCross.classList.remove("display-none")
+				hamburger.classList.add("display-none")
+
+			})
+			navCross.addEventListener('click' , () => {
+				navFull.classList.add("display-none")
+				navCross.classList.add("display-none")
+				hamburger.classList.remove("display-none")
+
 			})
 		</script>
 	</body>
