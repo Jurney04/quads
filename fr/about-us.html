@@ -31,7 +31,31 @@
 				</div>
 			</div>
 		</nav>
-
+		<nav id="nav-mobile" class="display-none">
+			<div class="flex name">
+				<img src="../images/logo.png" class="logo" alt="" />
+				<a href="index.html">Quadadventures <br />Murcia</a>
+			</div>
+			<img src="../images/hamburger.png" id="hamburger" alt="">
+			<img src="../images/cross.png" id="nav-cross" class="display-none" alt="">
+		</nav>
+		<div id="nav-full-mobile" class="display-none">
+			<div class="nav-categories flex colomn space-between">
+				<a href="quads.html" >Quads</a>
+				<a href="buggy.html">Buggy</a>
+				<a href="e-scooter.html">E-scooter</a>
+				<!-- <a href="#">Combi</a> -->
+			</div>
+			<div class="nav-us flex colomn space-between">
+				<a href="about-us.html" class="underline">À propos de nous</a>
+				<a href="#" id="contactBTN">Contact</a>
+			</div>
+			<div id="language-flag" class="flex space-evenly">
+				<a href="../en/about-us.html" >EN</a>
+				<a href="../nl/about-us.html">NL</a>
+				<a href="" class="underline">FR</a>
+			</div>
+		</div>
 		<img src="../images/main-pic.jpg" alt="" class="title-card pic " />
 		<img src="../images/darken.png" alt="" class="title-card dark" />
 		<div class="flex header">
@@ -41,11 +65,12 @@
 					Apprenez-en davantage sur nous et ce que nous faisons.
 				</h3>
 			</div>
-			<img src="../images/exclusion.png" alt="" class="exclusion" />
+			<img src="../images/exclusion.png" alt="" class="exclusion desktop" />
+			<img src="../images/exclusion-mobile.png" alt="" class="exclusion mobile" />
 		</div>
 		
 		<div class="flex space-between secundary-bg padding main_info">
-			<img src="../images/quads-at-night.jpg" alt="foto quad" class="main_img sec order2" />
+			<img src="../images/quads-at-night.jpg" alt="foto quad" class="main_img sec order2 desktop" />
 			<div class="text-width flex colomn">
 				<h2>NOTRE OBJECTIF</h2>
 				<hr />
@@ -90,10 +115,6 @@ Contactez-nous sur Whatsapp
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
-			
-			let language = document.getElementById("language-flag")
-			let languageMenu = document.getElementById("language-menu")
-			let languageClicked = false;
 
 			// Loop through each element in the NodeList
 			contactShow.forEach(function(contactButton) {
@@ -106,17 +127,22 @@ Contactez-nous sur Whatsapp
 				popup.classList.add("display-none")
 			})
 
-			language.addEventListener("click", function(e) {
-				e.preventDefault()
-				if (languageClicked == false){
-					languageMenu.classList.remove("display-none");
-					languageClicked = true;
-				}else if (languageClicked ==true){
-					languageMenu.classList.add("display-none");
-					languageClicked = false;
-				}
-					
-				});
+			let navCross = document.getElementById("nav-cross")
+			let hamburger = document.getElementById("hamburger")
+			let navFull = document.getElementById("nav-full-mobile")
+
+			hamburger.addEventListener('click' , () => {
+				navFull.classList.remove("display-none")
+				navCross.classList.remove("display-none")
+				hamburger.classList.add("display-none")
+
+			})
+			navCross.addEventListener('click' , () => {
+				navFull.classList.add("display-none")
+				navCross.classList.add("display-none")
+				hamburger.classList.remove("display-none")
+
+			})
 		</script>
 	</body>
 </html>
