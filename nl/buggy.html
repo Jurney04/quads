@@ -31,7 +31,31 @@
 				</div>
 			</div>
 		</nav>
-
+		<nav id="nav-mobile" class="display-none">
+			<div class="flex name">
+				<img src="../images/logo.png" class="logo" alt="" />
+				<a href="index.html">Quadadventures <br />Murcia</a>
+			</div>
+			<img src="../images/hamburger.png" id="hamburger" alt="">
+			<img src="../images/cross.png" id="nav-cross" class="display-none" alt="">
+		</nav>
+		<div id="nav-full-mobile" class="display-none">
+			<div class="nav-categories flex colomn space-between">
+				<a href="quads.html" >Quads</a>
+				<a href="buggy.html" class="underline">Buggy</a>
+				<a href="e-scooter.html">E-scooter</a>
+				<!-- <a href="#">Combi</a> -->
+			</div>
+			<div class="nav-us flex colomn space-between">
+				<a href="about-us.html">About us</a>
+				<a href="#" id="contactBTN">Contact</a>
+			</div>
+			<div id="language-flag" class="flex space-evenly">
+				<a href="../en/buggy.html" >EN</a>
+				<a href="" class="underline">NL</a>
+				<a href="../fr/buggy.html">FR</a>
+			</div>
+		</div>
 		<img src="../images/buggy-sunset.jpg" alt="" class="title-card" />
 		<img src="../images/darken.png" alt="" class="title-card dark" />
 		<div class="flex header">
@@ -43,7 +67,8 @@
 					iedereen die het sensatie van het rijden op een quad wil ervaren.
 				</h3>
 			</div>
-			<img src="../images/exclusion.png" alt="" class="exclusion" />
+			<img src="../images/exclusion.png" alt="" class="exclusion desktop" />
+			<img src="../images/exclusion-mobile.png" alt="" class="exclusion mobile" />
 		</div>
 		<div class="main_info flex colomn padding secundary-bg">
 			<div class="flex space-between all-routes">
@@ -117,7 +142,7 @@
 			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contacteer ons</button>
 		</div>
 		<div class="flex space-between primary-bg padding main_info">
-			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2" />
+			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2 desktop" />
 			<div class="text-width flex colomn">
 				<h2>BESCHRIJVING</h2>
 				<hr />
@@ -130,7 +155,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex space-between secundary-bg rules-padding-top">
+		<div class="flex space-between secundary-bg rules-padding-top desktop">
 			<div class="flex space-between">
 				<div class="rules">
 					<h2>INCL. TIJDENS DE RIT</h2>
@@ -140,7 +165,7 @@
 					</div>
 					<div class="rule flex">
 						<img src="../images/checkmark.png" class="icon" alt="" />
-						<p>Safety glasses</p>
+						<p>Oogbescherming</p>
 					</div>
 					<div class="rule flex">
 						<img src="../images/checkmark.png" class="icon" alt="" />
@@ -202,7 +227,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex space-between secundary-bg rules-padding-bottom">
+		<div class="flex space-between secundary-bg rules-padding-bottom desktop">
 			<div class="flex space-between">
 				<div class="rules rule-align">
 					<h2>BELANGRIJKE INFORMATIE</h2>
@@ -253,10 +278,154 @@
 						<img src="../images/question-circle-fill.png" class="icon" alt="" />
 						<p>Zonnebril</p>
 					</div>
+					<div class="rule flex">
+						<img src="../images/question-circle-fill.png" class="icon" alt="" />
+						<p>Goeie schoenen (geen slippers)</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="gallery flex primary-bg">
+		<div class="mobile secundary-bg padding">
+			<div id="rule1" class="flex space-between rules">
+				<h2>INCL. TIJDENS DE RIT</h2>
+				<img src="../images/arrow.png" id="rule1-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule1-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Begeleider(s) spreken NL | EN | FR</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Oogbescherming</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Bandana</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Verfrissend drankje(s) <span class="small-font"> (behalve bij de 1u route)</span></p>
+				</div>
+			</div>
+			<div id="rule2" class="flex space-between rules">
+				<h2>BIJ DE AANMELDING VAN DE RIT</h2>
+				<img src="../images/arrow.png"  id="rule2-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule2-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Min. 30 min voor de start van de tour aanmelden</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>ID-kaart tonen</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Rijbewijs tonen</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Vrijwaringshandtekening voor deelname</p>
+				</div>
+			</div>
+			<div id="rule3" class="flex space-between rules">
+				<h2>TIJDENS DE RIT</h2>
+				<img src="../images/arrow.png" id="rule3-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule3-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Wisselen van chauffeur tijdens de rit is onmogelijk</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>
+						Gebruik van electronische toestellen (GSM, camera, oortjes) <br />
+						is niet toegestaan.
+					</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Geen alcohol/drugs.</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Verboden te roken tijdens de volledige rit en tussenstops.</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Verboden afval op de grond te gooien tijdens de tussenstops.</p>
+				</div>
+			</div>
+			<div id="rule4" class="flex space-between rules">
+				<h2>BELANGRIJKE INFORMATIE</h2>
+				<img src="../images/arrow.png" id="rule4-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule4-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Verhuur van maximaal 2 buggy’s en te combineren met maximaal 4 quads</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Kinderen tussen 7-18 jaar rijden mee als passagier (kan ook bij de quad van de begeleider)</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Toegelaten gewicht per buggy: 150kg</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Niet geschikt voor zwangere vrouwen</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Quadadventures-Murcia is niet verantwoordelijk voor het verlies van persoonlijke voorwerpen</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Maximaal 2 personen per buggy</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Tijdens de rit altijd je armen binnen de buggy houden</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>We houden ons aan de wegcode.</p>
+				</div>
+			</div>
+			<div id="rule5" class="flex space-between rules">
+				<h2>AANGERADEN</h2>
+				<img src="../images/arrow.png" id="rule5-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule5-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Comfortabele kledij</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Zonnebescherming</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Zonnebril</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Goeie schoenen (geen slippers)</p>
+				</div>
+			</div>
+		</div>
+		<div class="gallery flex primary-bg desktop">
 			<div class="div-1 flex colomn space-between">
 				<img class="gallery-image-margin-right gallery-image-margin-bottom" src="../images/mountainview.jpg" alt="" />
 				<img class="gallery-image-margin-right" src="../images/China-Buggy-400cc-E5-Delphi-Efi-Engine-Parts-Accessories-ATV-4X4-Motosport-UTV.avif" alt="" />
@@ -269,7 +438,7 @@
 				<img class="" src="../images/wilderness.jpeg" alt="" />
 			</div>
 		</div>
-		<div class="div-3 flex primary-bg space-between">
+		<div class="div-3 flex primary-bg space-between desktop" >
 			<img class="" src="../images/sundown.jpg" alt="" />
 			<img class="" src="../images/utv-400.jpg" alt="" />
 			<img class="" src="../images/Schermafbeelding 2025-01-26 124926.jpg" alt="" />
@@ -320,6 +489,57 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
+			let navCross = document.getElementById("nav-cross")
+			let hamburger = document.getElementById("hamburger")
+			let navFull = document.getElementById("nav-full-mobile")
+
+			hamburger.addEventListener('click' , () => {
+				navFull.classList.remove("display-none")
+				navCross.classList.remove("display-none")
+				hamburger.classList.add("display-none")
+
+			})
+			navCross.addEventListener('click' , () => {
+				navFull.classList.add("display-none")
+				navCross.classList.add("display-none")
+				hamburger.classList.remove("display-none")
+
+			})
+
+			
+			const rules = [
+				{ id: "rule1", menuId: "rule1-menu", arrowId: "rule1-arrow" },
+				{ id: "rule2", menuId: "rule2-menu", arrowId: "rule2-arrow" },
+				{ id: "rule3", menuId: "rule3-menu", arrowId: "rule3-arrow" },
+				{ id: "rule4", menuId: "rule4-menu", arrowId: "rule4-arrow" },
+				{ id: "rule5", menuId: "rule5-menu", arrowId: "rule5-arrow" }
+			];
+
+			
+			const ruleStates = {};
+
+			
+			rules.forEach(rule => {
+				const ruleElement = document.getElementById(rule.id);
+				const ruleMenu = document.getElementById(rule.menuId);
+				const ruleArrow = document.getElementById(rule.arrowId);
+
+				
+				ruleStates[rule.id] = false;
+
+				
+				ruleElement.addEventListener('click', () => {
+					ruleStates[rule.id] = !ruleStates[rule.id];
+
+					if (ruleStates[rule.id]) {
+						ruleMenu.classList.remove("display-none");
+						ruleArrow.style.transform = 'rotate(180deg)';
+					} else {
+						ruleMenu.classList.add("display-none");
+						ruleArrow.style.transform = 'rotate(0)';
+					}
+				});
+			});
 		</script>
 	</body>
 </html>

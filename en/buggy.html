@@ -13,7 +13,7 @@
 		<nav>
 			<div class="flex name">
 				<img src="../images/logo.png" class="logo" alt="" />
-				<a href="/index.html">Quadadventures <br />Murcia</a>
+				<a href="../index.html">Quadadventures <br />Murcia</a>
 			</div>
 			<div class="nav-categories flex space-between">
 				<a href="quads.html">Quads</a>
@@ -31,7 +31,31 @@
 				</div>
 			</div>
 		</nav>
-
+		<nav id="nav-mobile" class="display-none">
+			<div class="flex name">
+				<img src="../images/logo.png" class="logo" alt="" />
+				<a href="../index.html">Quadadventures <br />Murcia</a>
+			</div>
+			<img src="../images/hamburger.png" id="hamburger" alt="">
+			<img src="../images/cross.png" id="nav-cross" class="display-none" alt="">
+		</nav>
+		<div id="nav-full-mobile" class="display-none">
+			<div class="nav-categories flex colomn space-between">
+				<a href="quads.html" >Quads</a>
+				<a href="buggy.html" class="underline">Buggy</a>
+				<a href="e-scooter.html">E-scooter</a>
+				<!-- <a href="#">Combi</a> -->
+			</div>
+			<div class="nav-us flex colomn space-between">
+				<a href="about-us.html">About us</a>
+				<a href="#" id="contactBTN">Contact</a>
+			</div>
+			<div id="language-flag" class="flex space-evenly">
+				<a href="" class="underline">EN</a>
+				<a href="../nl/buggy.html">NL</a>
+				<a href="../fr/buggy.html">FR</a>
+			</div>
+		</div>
 		<img src="../images/buggy-sunset.jpg" alt="" class="title-card" />
 		<img src="../images/darken.png" alt="" class="title-card dark" />
 		<div class="flex header">
@@ -43,7 +67,8 @@
 					anyone who wants to experience the thrill of riding a quad bike.
 				</h3>
 			</div>
-			<img src="../images/exclusion.png" alt="" class="exclusion" />
+			<img src="../images/exclusion.png" alt="" class="exclusion desktop" />
+			<img src="../images/exclusion-mobile.png" alt="" class="exclusion mobile" />
 		</div>
 		<div class="main_info flex colomn padding secundary-bg">
 			<div class="flex space-between all-routes">
@@ -119,7 +144,7 @@
 			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contact us</button>
 		</div>
 		<div class="flex space-between primary-bg padding main_info">
-			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2" />
+			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2 desktop" />
 			<div class="text-width flex colomn">
 				<h2>BESCHRIJVING</h2>
 				<hr />
@@ -132,7 +157,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="flex space-between secundary-bg rules-padding-top">
+		<div class="flex space-between secundary-bg rules-padding-top desktop">
 			<div class="flex space-between">
 				<div class="rules">
 					<h2>INCL. DURING THE RIDE</h2>
@@ -204,7 +229,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex space-between secundary-bg rules-padding-bottom">
+		<div class="flex space-between secundary-bg rules-padding-bottom desktop">
 			<div class="flex space-between">
 				<div class="rules rule-align">
 					<h2>IMPORTANT INFORMATION</h2>
@@ -261,7 +286,147 @@
 				</div>
 			</div>
 		</div>
-		<div class="gallery flex primary-bg">
+		<div class="mobile secundary-bg padding">
+			<div id="rule1" class="flex space-between rules">
+				<h2 >INCL. DURING THE RIDE</h2>
+				<img src="../images/arrow.png" id="rule1-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule1-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Guide(s) speak NL | EN | FR</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Safety glasses</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Bandana</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/checkmark.png" class="icon" alt="" />
+					<p>Refreshing drink(s) <span class="small-font"> (except for the 1h route)</span></p>
+				</div>
+			</div>
+			<div id="rule2" class="flex space-between rules">
+				<h2>WHEN REGISTERING THE RIDE</h2>
+				<img src="../images/arrow.png"  id="rule2-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule2-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Register at least 30 min before the start of the tour</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Show ID card</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Show driving licence</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-plus.png" class="icon" alt="" />
+					<p>Please sign for participation</p>
+				</div>
+			</div>
+			<div id="rule3" class="flex space-between rules">
+				<h2>DURING THE RIDE</h2>
+				<img src="../images/arrow.png" id="rule3-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule3-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Changing drivers during the journey is impossible</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>
+						Use of electronic devices (mobile phone, camera, earphones) <br />
+						is not allowed.
+					</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>No alcohol/drugs.</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>No smoking during the entire ride and intermediate stops.</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/circle-minus.png" class="icon" alt="" />
+					<p>Prohibited throwing rubbish on the ground during stopovers.</p>
+				</div>
+			</div>
+			<div id="rule4" class="flex space-between rules">
+				<h2>IMPORTANT INFORMATION</h2>
+				<img src="../images/arrow.png" id="rule4-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule4-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Rental of up to 2 buggy’s and can be combined with  max 4 quads</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Children between 7-18 years ride along as a passenger (is also possible at the supervisor's quad)</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Permitted weight per buggy: 150kg</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Not suitable for pregnant women</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Quadventures-Murcia is not responsible for the loss of personal items</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>Maximum of 2 people per buggy</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>During the ride, always keep your arms inside the buggy</p>		
+				</div>
+				<div class="rule flex">
+					<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
+					<p>We abide by the highway code</p>
+				</div>
+			</div>
+			<div id="rule5" class="flex space-between rules">
+				<h2>RECOMMENDED</h2>
+				<img src="../images/arrow.png" id="rule5-arrow" alt="">
+			</div>
+			<hr />
+			<div id="rule5-menu" class="display-none ">
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Comfortable clothing</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Sun protection</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Sunglasses</p>
+				</div>
+				<div class="rule flex">
+					<img src="../images/question-circle-fill.png" class="icon" alt="" />
+					<p>Good shoes (no flip-flops)</p>
+				</div>
+			</div>
+		</div>
+		<div class="gallery flex primary-bg desktop">
 			<div class="div-1 flex colomn space-between">
 				<img class="gallery-image-margin-right gallery-image-margin-bottom" src="../images/mountainview.jpg" alt="" />
 				<img class="gallery-image-margin-right" src="../images/China-Buggy-400cc-E5-Delphi-Efi-Engine-Parts-Accessories-ATV-4X4-Motosport-UTV.avif" alt="" />
@@ -274,7 +439,7 @@
 				<img class="" src="../images/wilderness.jpeg" alt="" />
 			</div>
 		</div>
-		<div class="div-3 flex primary-bg space-between">
+		<div class="div-3 flex primary-bg space-between desktop">
 			<img class="" src="../images/sundown.jpg" alt="" />
 			<img class="" src="../images/utv-400.jpg" alt="" />
 			<img class="" src="../images/Schermafbeelding 2025-01-26 124926.jpg" alt="" />
@@ -325,6 +490,55 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
+			let navCross = document.getElementById("nav-cross")
+			let hamburger = document.getElementById("hamburger")
+			let navFull = document.getElementById("nav-full-mobile")
+
+			hamburger.addEventListener('click' , () => {
+				navFull.classList.remove("display-none")
+				navCross.classList.remove("display-none")
+				hamburger.classList.add("display-none")
+
+			})
+			navCross.addEventListener('click' , () => {
+				navFull.classList.add("display-none")
+				navCross.classList.add("display-none")
+				hamburger.classList.remove("display-none")
+
+			})
+			const rules = [
+				{ id: "rule1", menuId: "rule1-menu", arrowId: "rule1-arrow" },
+				{ id: "rule2", menuId: "rule2-menu", arrowId: "rule2-arrow" },
+				{ id: "rule3", menuId: "rule3-menu", arrowId: "rule3-arrow" },
+				{ id: "rule4", menuId: "rule4-menu", arrowId: "rule4-arrow" },
+				{ id: "rule5", menuId: "rule5-menu", arrowId: "rule5-arrow" }
+			];
+
+			
+			const ruleStates = {};
+
+			
+			rules.forEach(rule => {
+				const ruleElement = document.getElementById(rule.id);
+				const ruleMenu = document.getElementById(rule.menuId);
+				const ruleArrow = document.getElementById(rule.arrowId);
+
+				
+				ruleStates[rule.id] = false;
+
+				
+				ruleElement.addEventListener('click', () => {
+					ruleStates[rule.id] = !ruleStates[rule.id];
+
+					if (ruleStates[rule.id]) {
+						ruleMenu.classList.remove("display-none");
+						ruleArrow.style.transform = 'rotate(180deg)';
+					} else {
+						ruleMenu.classList.add("display-none");
+						ruleArrow.style.transform = 'rotate(0)';
+					}
+				});
+			});
 		</script>
 	</body>
 </html>

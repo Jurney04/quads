@@ -13,7 +13,7 @@
 		<nav>
 			<div class="flex name">
 				<img src="../images/logo.png" class="logo" alt="" />
-				<a href="/index.html">Quadadventures <br />Murcia</a>
+				<a href="../index.html">Quadadventures <br />Murcia</a>
 			</div>
 			<div class="nav-categories flex space-between">
 				<a href="quads.html" class="underline">Quads</a>
@@ -47,13 +47,13 @@
 				<!-- <a href="#">Combi</a> -->
 			</div>
 			<div class="nav-us flex colomn space-between">
-				<a href="en/about-us.html">About us</a>
+				<a href="about-us.html">About us</a>
 				<a href="#" id="contactBTN">Contact</a>
 			</div>
 			<div id="language-flag" class="flex space-evenly">
 				<a href="" class="underline">EN</a>
-				<a href="nl/quads.html">NL</a>
-				<a href="fr/quads.html">FR</a>
+				<a href="../nl/quads.html">NL</a>
+				<a href="../fr/quads.html">FR</a>
 			</div>
 		</div>
 		<img src="../images/quads-title.png" alt="" class="title-card" />
@@ -241,7 +241,7 @@
 					</div>
 					<div class="rule flex">
 						<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
-						<p>Children between 7-18 years ride along as a passenger (also possible with a supervisor)</p>
+						<p>Children between 7-18 years ride along as a passenger (is also possible at the supervisor's quad)</p>
 					</div>
 					<div class="rule flex">
 						<img src="../images/exclamation-circle-fill.png" class="icon" alt="" />
@@ -420,8 +420,6 @@
 					<p>Good shoes (no flip-flops)</p>
 				</div>
 			</div>
-			
-
 		</div>
 		<div class="gallery flex primary-bg desktop" >
 			<div class="div-1 flex colomn space-between">
@@ -504,87 +502,40 @@
 
 			})
 
-			let rule1 = document.getElementById("rule1")
-			let rule1Menu = document.getElementById("rule1-menu")
-			let rule1Arrow = document.getElementById("rule1-arrow")
-			let rule1Shown = "false"
 			
-			let rule2= document.getElementById("rule2")
-			let rule2Menu = document.getElementById("rule2-menu")
-			let rule2Arrow = document.getElementById("rule2-arrow")
-			let rule2Shown = "false"
-			
-			let rule3 = document.getElementById("rule3")
-			let rule3Menu = document.getElementById("rule3-menu")
-			let rule3Arrow = document.getElementById("rule3-arrow")
-			let rule3Shown = "false"
-			
-			let rule4= document.getElementById("rule4")
-			let rule4Menu = document.getElementById("rule4-menu")
-			let rule4Arrow = document.getElementById("rule4-arrow")
-			let rule4Shown = "false"
-			
-			let rule5 = document.getElementById("rule5")
-			let rule5Menu = document.getElementById("rule5-menu")
-			let rule5Arrow = document.getElementById("rule5-arrow")
-			let rule5Shown = "false"
-			
+			const rules = [
+				{ id: "rule1", menuId: "rule1-menu", arrowId: "rule1-arrow" },
+				{ id: "rule2", menuId: "rule2-menu", arrowId: "rule2-arrow" },
+				{ id: "rule3", menuId: "rule3-menu", arrowId: "rule3-arrow" },
+				{ id: "rule4", menuId: "rule4-menu", arrowId: "rule4-arrow" },
+				{ id: "rule5", menuId: "rule5-menu", arrowId: "rule5-arrow" }
+			];
 
-			rule1.addEventListener('click' , () => {
-				if(rule1Shown == "false"){
-					rule1Menu.classList.remove("display-none")
-					rule1Arrow.style.transform = 'rotate(180deg)';
-					rule1Shown = "true"
-				}else if(rule1Shown == "true"){
-					rule1Menu.classList.add("display-none")
-					rule1Arrow.style.transform = 'rotate(0)';
-					rule1Shown = "false"
-				}
-			})
-			rule2.addEventListener('click' , () => {
-				if(rule2Shown == "false"){
-					rule2Menu.classList.remove("display-none")
-					rule2Arrow.style.transform = 'rotate(180deg)';
-					rule2Shown = "true"
-				}else if(rule2Shown == "true"){
-					rule2Menu.classList.add("display-none")
-					rule2Arrow.style.transform = 'rotate(0)';
-					rule2Shown = "false"
-				}
-			})
-			rule3.addEventListener('click' , () => {
-				if(rule3Shown == "false"){
-					rule3Menu.classList.remove("display-none")
-					rule3Arrow.style.transform = 'rotate(180deg)';
-					rule3Shown = "true"
-				}else if(rule3Shown == "true"){
-					rule3Menu.classList.add("display-none")
-					rule3Arrow.style.transform = 'rotate(0)';
-					rule3Shown = "false"
-				}
-			})
-			rule4.addEventListener('click' , () => {
-				if(rule4Shown == "false"){
-					rule4Menu.classList.remove("display-none")
-					rule4Arrow.style.transform = 'rotate(180deg)';
-					rule4Shown = "true"
-				}else if(rule4Shown == "true"){
-					rule4Menu.classList.add("display-none")
-					rule4Arrow.style.transform = 'rotate(0)';
-					rule4Shown = "false"
-				}
-			})
-			rule5.addEventListener('click' , () => {
-				if(rule5Shown == "false"){
-					rule5Menu.classList.remove("display-none")
-					rule5Arrow.style.transform = 'rotate(180deg)';
-					rule5Shown = "true"
-				}else if(rule5Shown == "true"){
-					rule5Menu.classList.add("display-none")
-					rule5Arrow.style.transform = 'rotate(0)';
-					rule5Shown = "false"
-				}
-			})
+			
+			const ruleStates = {};
+
+			
+			rules.forEach(rule => {
+				const ruleElement = document.getElementById(rule.id);
+				const ruleMenu = document.getElementById(rule.menuId);
+				const ruleArrow = document.getElementById(rule.arrowId);
+
+				
+				ruleStates[rule.id] = false;
+
+				
+				ruleElement.addEventListener('click', () => {
+					ruleStates[rule.id] = !ruleStates[rule.id];
+
+					if (ruleStates[rule.id]) {
+						ruleMenu.classList.remove("display-none");
+						ruleArrow.style.transform = 'rotate(180deg)';
+					} else {
+						ruleMenu.classList.add("display-none");
+						ruleArrow.style.transform = 'rotate(0)';
+					}
+				});
+			});
 		</script>
 	</body>
 </html>
