@@ -34,7 +34,7 @@ nav {
 	position: absolute;
 	height: 50%;
 	padding-top: 10%;
-	max-width: 50%;
+	max-width: 70%;
 }
 .mobile {
 	display: none;
@@ -289,5 +289,24 @@ nav {
 	}
 	.rules {
 		margin-top: 5vh;
+	}
+	.e-scooter {
+		width: 100%;
+		margin-bottom: 5vh;
+	}
+	.scooter-info {
+		align-items: center;
+	}
+	.scooter-info h1 {
+		font-size: 12vw;
+	}
+	.scooter-info p {
+		font-size: 7.5vw;
+	}
+	.scooter-info li {
+		font-size: 5vw;
+	}
+	.scooter-info div {
+		flex-direction: column;
 	}
 }
