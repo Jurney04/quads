@@ -175,6 +175,9 @@ h5 {
 		transform: scale(0.9);
 	}
 }
+.reviews {
+	padding: 7.5vh 14vh !important;
+}
 /* _________________________________________________________________________ */
 .main_info {
 	align-items: center;
@@ -298,7 +301,8 @@ footer {
 	height: 100%;
 	object-fit: contain;
 }
-footer a {
+footer a,
+footer p {
 	color: #ffffff;
 	font-size: 1.5vw;
 	text-decoration: none;
@@ -310,6 +314,17 @@ footer a {
 	z-index: 6;
 	height: 20vh;
 	align-self: center;
+}
+footer p {
+	margin: 0;
+	font-size: 1.25vw;
+}
+.footer-adress {
+	height: 100%;
+	text-align: right;
+	align-self: flex-end;
+	vertical-align: text-top;
+	width: 100%;
 }
 .pop-up {
 	position: fixed;
@@ -347,6 +362,54 @@ footer a {
 	position: fixed;
 	top: 2vh;
 	right: 2vh;
+}
+#cross2 {
+	position: fixed;
+	top: 2vh;
+	right: 2vh;
+}
+.pop-up2 {
+	background-color: #ffffff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: max-content;
+	height: max-content;
+	max-width: 40%;
+	padding: 5% 5%;
+	z-index: 20;
+	border: #000 1px solid;
+	text-align: center;
+	vertical-align: middle;
+}
+.pop-up2 a {
+	color: #000;
+	font-size: 1.5rem;
+}
+.pop-up2 div {
+	width: 50%;
+	margin-top: 10%;
+	height: 2.5%;
+	justify-content: space-evenly;
+	align-self: center;
+}
+.pop-up2 h2 {
+	font-size: 1.25rem;
+}
+.contact-logo2 {
+	object-fit: contain;
+	height: 3.5vh;
+}
+.pop-up-logo {
+	object-fit: contain;
+	height: 75%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0.25;
+	z-index: -5;
 }
 .display-none {
 	display: none;
@@ -492,6 +555,10 @@ footer a {
 		font-size: 6vw;
 		margin-left: 2.5%;
 	}
+	footer p {
+		margin: 0;
+		font-size: 4.5vw;
+	}
 
 	.pop-up {
 		position: fixed;
@@ -529,5 +596,31 @@ footer a {
 		top: 2vh;
 		right: 7.5%;
 		height: 4vh;
+	}
+	.pop-up2 {
+		position: fixed;
+		height: 60%;
+		max-width: 60%;
+		padding: 20% 7.5%;
+		z-index: 20;
+		background-color: #ffffff;
+		border: #000 1px none;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.pop-up-logo {
+		object-fit: contain;
+		display: none;
+
+		width: 75%;
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0.05;
+		z-index: -5;
+	}
+	.elfsight-app-3af1cf75-c14e-422c-a6ee-5a8302b84135 a {
+		display: none !important;
 	}
 }

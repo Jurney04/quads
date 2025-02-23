@@ -187,6 +187,9 @@ nav {
 	z-index: 0;
 	top: 0;
 }
+.smaller-header {
+	font-size: 7vw !important;
+}
 @media screen and (max-width: 768px) {
 	.title-card {
 		height: 90vh;
