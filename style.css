@@ -323,6 +323,10 @@ footer p {
 	vertical-align: text-top;
 	width: 100%;
 }
+.rights {
+	font-size: 0.75rem;
+	margin-left: 0;
+}
 .pop-up {
 	position: fixed;
 	top: 50%;
