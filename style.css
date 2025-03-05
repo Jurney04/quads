@@ -102,14 +102,6 @@ nav a {
 	width: fit-content;
 	justify-content: space-between;
 }
-#language-flag {
-	height: min-content;
-
-	align-self: center;
-}
-#language-flag a {
-	margin: 0vh 0.5vw;
-}
 
 .scrolled {
 	animation-name: opacity-full;
@@ -178,6 +170,17 @@ h5 {
 /* _________________________________________________________________________ */
 .main_info {
 	align-items: center;
+}
+.main_info_summary {
+	padding: 5% 1%;
+}
+.main_info_summary h3 {
+	font-size: 1.25vw;
+	font-weight: bold;
+	margin: 0;
+}
+.main_info_summary p {
+	font-size: 1vw;
 }
 .main_img {
 	width: 33%;
