@@ -423,6 +423,9 @@ footer p {
 /* ============================================================= */
 /* ============================================================= */
 @media screen and (max-width: 768px) {
+	.desktop {
+		display: none;
+	}
 	.padding {
 		padding: 5vh 5vh;
 	}
@@ -518,7 +521,11 @@ footer p {
 		align-items: center;
 		flex-direction: column;
 	}
-
+	.main_info_summary h3 {
+		font-size: 5vw;
+		font-weight: bold;
+		margin: 0;
+	}
 	.main_img {
 		width: 100%;
 		order: 2;
