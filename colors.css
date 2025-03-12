@@ -41,13 +41,13 @@
 	font-size: 4rem;
 }
 .header-info h1 {
-	font-size: 8vw;
+	font-size: 8vw !important;
 }
 .underline {
 	text-decoration: underline;
 }
 .card p {
-	font-size: 2rem;
+	font-size: 2rem !important;
 	color: #fff;
 	margin: 0;
 }
