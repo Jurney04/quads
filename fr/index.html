@@ -39,8 +39,8 @@
 				<img src="../images/logo.png" class="logo" alt="" />
 				<a href="index.html">Quadadventures <br />Murcia</a>
 			</div>
-			<img src="../images/hamburger.png" id="hamburger" alt="">
-			<img src="../images/cross.png" id="nav-cross" class="display-none" alt="">
+			<i class="fa fa-navicon" id="hamburger"></i>
+			<i class="fa fa-remove" id="nav-cross"></i>
 		</nav>
 		<div id="nav-full-mobile" class="display-none">
 			<div class="nav-categories flex colomn space-between">
@@ -91,7 +91,7 @@
 			</div>
 			<img src="../images/quads.jpg" alt="quad photo" class="main_img" />
 		</div>
-		<div class="padding flex space-between-bg">
+		<div class="padding2 flex space-between desktop">
 			<div class="main_info_summary ">
 				<h3>
 					Expérience tout-terrain:
@@ -128,9 +128,9 @@
 				<p>La sécurité est notre priorité absolue. Vous recevrez à l'avance des instructions détaillées sur la conduite des véhicules et la conduite sur terrain hors route.</p>
 			</div>
 		</div>
-		<!-- <div class="padding">
+		<div class="padding">
 			<div class="elfsight-app-3af1cf75-c14e-422c-a6ee-5a8302b84135"></div>
-		</div> -->
+		</div>
 		<!-- start of individual tours and info regarding each one ----------------------------------------------------------------------------------------------->
 		<div class="flex space-between padding main_info secundary-bg">
 			<img src="../images/quads-main-image.png" alt="foto quad" class="main_img" />
@@ -141,7 +141,7 @@
 				<p>
 					Êtes-vous prêt pour une aventure passionnante sur quatre roues ?<br /><br />
 					Chez Quadadventures-Murcia, nous vous proposons des balades guidées en quad, parfaites pour tous ceux qui souhaitent vivre le frisson de conduire un quad.				</p>
-				<a href="quads.html" class="color-1-bg main_btn secundary">Lire la suite --></a>
+				<a href="quads.html" class="color-1-bg main_btn secundary">Lire la suite <i class="fa fa-arrow-right"></i></a>
 			</div>
 		</div>
 		<div class="flex space-between padding main_info">
@@ -152,7 +152,7 @@
 				<hr />
 				<p>
 					Découvrez la combinaison ultime d'aventure et de nature avec nos balades guidées à travers les montagnes ! Découvrez la beauté du paysage à bord d'un buggy, tout en profitant des vues à couper le souffle et de l'air frais des montagnes. Nos balades sont parfaites pour tous ceux qui recherchent une expérience unique et active dans la nature. Que vous préfériez une balade douce ou une visite plus excitante, nos guides experts s'assureront que vous exploriez la région avec plaisir et en toute sécurité. Préparez-vous à vivre une expérience inoubliable en pleine nature !</p>
-				<a href="buggy.html" class="color-2-bg main_btn secundary left">Lire la suite --></a>
+				<a href="buggy.html" class="color-2-bg main_btn secundary left">Lire la suite <i class="fa fa-arrow-right"></i></a>
 			</div>
 		</div>
 		<div class="flex space-between padding main_info secundary-bg">
@@ -164,7 +164,7 @@
 				<p>
 					Vous souhaitez vous déplacer facilement ? Vous ne voulez pas chercher les transports en commun ? <br />
 					Louez nos scooters électriques maintenant et choisissez où et quand vous allez quelque part. Avec notre offre, vous pouvez choisir le scooter qui vous convient le mieux.				</p>
-				<a href="#" class="color-3-bg main_btn secundary">Lire la suite --></a>
+				<a href="#" class="color-3-bg main_btn secundary">Lire la suite <i class="fa fa-arrow-right"></i></a>
 			</div>
 		</div>
 		<!-- <div class="flex space-between padding main_info">
@@ -185,7 +185,7 @@
 			<div class="flex space-between colomn footer-info ">
 				<div class="flex">
 					<img src="../images/whatsapp.png" class="footer-logo" alt="" />
-					<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+					<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
 				</div>
 				<div class="flex">
 					<img src="../images/facebook.png" class="footer-logo" alt="" />
@@ -209,9 +209,22 @@
 			<h2>(Pendant les trajets, nous sommes difficiles à joindre, envoyez un SMS Whatsapp si nécessaire)</h2>
 			<div class="flex">
 				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
-				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+				<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
 			</div>
-			<img src="../images/cross.png" id="cross" alt="">
+			<i class="fa fa-remove" id="cross"></i>
+		</div>
+		<div id="pop-up2" class="pop-up2 flex colomn">
+			<!-- <img src="images/logo.png" alt="" class="pop-up-logo" /> -->
+			<h1>
+				Réservez votre trajet dès maintenant
+			</h1>
+			<h2>En réservant dès maintenant, vous bénéficierez <br> d'une réduction de <span style="color:red; font-weight: 800;">10 € par véhicule</span> sur votre trajet  <br>(hors trottinettes électriques).</h2>
+			<div class="flex">
+				<img src="../images/whatsapp-black.png" class="contact-logo2" alt="" />
+				<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
+			</div>
+			<i class="fa fa-remove" id="cross2"></i>
+			
 		</div>
 		<script>
 			const navbar = document.getElementById('nav-bar');
@@ -237,20 +250,26 @@
 			cross.addEventListener("click",() => {
 				popup.classList.add("display-none")
 			})
+			let cross2 = document.getElementById("cross2");
+			let popup2 = document.getElementById("pop-up2");
+			
+			cross2.addEventListener("click",() => {
+				popup2.classList.add("display-none")
+			})
 			let navCross = document.getElementById("nav-cross")
 			let hamburger = document.getElementById("hamburger")
 			let navFull = document.getElementById("nav-full-mobile")
 
 			hamburger.addEventListener('click' , () => {
 				navFull.classList.remove("display-none")
-				navCross.classList.remove("display-none")
-				hamburger.classList.add("display-none")
+				navCross.style.display = "block"
+				hamburger.style.display = "none"
 
 			})
 			navCross.addEventListener('click' , () => {
 				navFull.classList.add("display-none")
-				navCross.classList.add("display-none")
-				hamburger.classList.remove("display-none")
+				navCross.style.display = "none"
+				hamburger.style.display = "block"
 
 			})
 		</script>

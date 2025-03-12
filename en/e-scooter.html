@@ -36,8 +36,8 @@
 				<img src="../images/logo.png" class="logo" alt="" />
 				<a href="../index.html">Quadadventures <br />Murcia</a>
 			</div>
-			<img src="../images/hamburger.png" id="hamburger" alt="">
-			<img src="../images/cross.png" id="nav-cross" class="display-none" alt="">
+			<i class="fa fa-navicon" id="hamburger"></i>
+			<i class="fa fa-remove" id="nav-cross"></i>
 		</nav>
 		<div id="nav-full-mobile" class="display-none">
 			<div class="nav-categories flex colomn space-between">
@@ -173,7 +173,7 @@
 		<div class="mobile primary-bg padding">
 			<div id="rule1" class="flex space-between rules">
 				<h2>SAFETY</h2>
-				<img src="../images/arrow.png" id="rule1-arrow" alt="">
+				<i class="fa fa-angle-down" id="rule1-arrow"></i>
 			</div>
 			<hr />
 			<div id="rule1-menu" class="display-none ">
@@ -196,7 +196,7 @@
 			</div>
 			<div id="rule2" class="flex space-between rules">
 				<h2>ROAD RULES</h2>
-				<img src="../images/arrow.png"  id="rule2-arrow" alt="">
+				<i class="fa fa-angle-down" id="rule2-arrow"></i>
 			</div>
 			<hr />
 			<div id="rule2-menu" class="display-none ">
@@ -219,7 +219,7 @@
 			</div>
 			<div id="rule3" class="flex space-between rules">
 				<h2>DURING THE RIDE</h2>
-				<img src="../images/arrow.png" id="rule3-arrow" alt="">
+				<i class="fa fa-angle-down" id="rule3-arrow"></i>
 			</div>
 			<hr />
 			<div id="rule3-menu" class="display-none ">
@@ -252,7 +252,7 @@
 			<div class="flex space-between colomn footer-info ">
 				<div class="flex">
 					<img src="../images/whatsapp.png" class="footer-logo" alt="" />
-					<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+					<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
 				</div>
 				<div class="flex">
 					<img src="../images/facebook.png" class="footer-logo" alt="" />
@@ -276,9 +276,9 @@
 			<h2>(During rides we are difficult to reach, so send Whatsapp text messages)</h2>
 			<div class="flex">
 				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
-				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+				<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
 			</div>
-			<img src="../images/cross.png" id="cross" alt="">
+			<i class="fa fa-remove" id="cross"></i>
 		</div>
 		<script>
 			let cross = document.getElementById("cross");
@@ -301,14 +301,14 @@
 
 			hamburger.addEventListener('click' , () => {
 				navFull.classList.remove("display-none")
-				navCross.classList.remove("display-none")
-				hamburger.classList.add("display-none")
+				navCross.style.display = "block"
+				hamburger.style.display = "none"
 
 			})
 			navCross.addEventListener('click' , () => {
 				navFull.classList.add("display-none")
-				navCross.classList.add("display-none")
-				hamburger.classList.remove("display-none")
+				navCross.style.display = "none"
+				hamburger.style.display = "block"
 
 			})
 
@@ -337,10 +337,13 @@
 
 					if (ruleStates[rule.id]) {
 						ruleMenu.classList.remove("display-none");
-						ruleArrow.style.transform = 'rotate(180deg)';
+						ruleArrow.classList.remove("fa-angle-down");
+						ruleArrow.classList.add("fa-angle-up");
+						
 					} else {
 						ruleMenu.classList.add("display-none");
-						ruleArrow.style.transform = 'rotate(0)';
+						ruleArrow.classList.remove("fa-angle-up");
+						ruleArrow.classList.add("fa-angle-down");
 					}
 				});
 			});

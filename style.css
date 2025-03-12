@@ -33,6 +33,9 @@ li {
 .padding {
 	padding: 7.5vh 14vh;
 }
+.padding2 {
+	padding: 0vh 14vh 7.5vh 14vh;
+}
 .text-width {
 	width: 40%;
 }
@@ -172,16 +175,9 @@ h5 {
 	align-items: center;
 }
 .main_info_summary {
-	padding: 5% 1%;
+	padding: 0% 1%;
 }
-.main_info_summary h3 {
-	font-size: 1.25vw;
-	font-weight: bold;
-	margin: 0;
-}
-.main_info_summary p {
-	font-size: 1vw;
-}
+
 .main_img {
 	width: 33%;
 	height: auto;
@@ -419,9 +415,9 @@ footer p {
 	display: none;
 }
 
-/* ============================================================= */
-/* ============================================================= */
-/* ============================================================= */
+/* =========================================================================================================================================== */
+/* =========================================================================================================================================== */
+/* =========================================================================================================================================== */
 @media screen and (max-width: 768px) {
 	.desktop {
 		display: none;
@@ -494,10 +490,6 @@ footer p {
 		justify-content: space-evenly;
 	}
 
-	#hamburger {
-		height: 75%;
-		transform: translateY(15%);
-	}
 	.cards {
 		width: 80%;
 		/* width: 71%; */
@@ -554,6 +546,7 @@ footer p {
 	footer {
 		flex-direction: column;
 		padding: 2.5vh 5vh;
+		background-size: cover;
 	}
 
 	.footer-info {
@@ -618,6 +611,9 @@ footer p {
 		border: #000 1px none;
 		text-align: center;
 		vertical-align: middle;
+	}
+	.pop-up2 div {
+		width: 100%;
 	}
 	.pop-up-logo {
 		object-fit: contain;

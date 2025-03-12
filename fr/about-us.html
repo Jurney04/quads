@@ -36,8 +36,8 @@
 				<img src="../images/logo.png" class="logo" alt="" />
 				<a href="index.html">Quadadventures <br />Murcia</a>
 			</div>
-			<img src="../images/hamburger.png" id="hamburger" alt="">
-			<img src="../images/cross.png" id="nav-cross" class="display-none" alt="">
+			<i class="fa fa-navicon" id="hamburger"></i>
+			<i class="fa fa-remove" id="nav-cross"></i>
 		</nav>
 		<div id="nav-full-mobile" class="display-none">
 			<div class="nav-categories flex colomn space-between">
@@ -85,7 +85,7 @@
 			<div class="flex space-between colomn footer-info ">
 				<div class="flex">
 					<img src="../images/whatsapp.png" class="footer-logo" alt="" />
-					<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+					<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
 				</div>
 				<div class="flex">
 					<img src="../images/facebook.png" class="footer-logo" alt="" />
@@ -109,9 +109,9 @@ Contactez-nous sur Whatsapp
 <h2>(Pendant les trajets, nous sommes difficiles à joindre, envoyez un SMS Whatsapp si nécessaire)</h2>
 			<div class="flex">
 				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
-				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+				<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
 			</div>
-			<img src="../images/cross.png" id="cross" alt="">
+			<i class="fa fa-remove" id="cross"></i>
 		</div>
 		<script>
 			let cross = document.getElementById("cross");
@@ -135,14 +135,14 @@ Contactez-nous sur Whatsapp
 
 			hamburger.addEventListener('click' , () => {
 				navFull.classList.remove("display-none")
-				navCross.classList.remove("display-none")
-				hamburger.classList.add("display-none")
+				navCross.style.display = "block"
+				hamburger.style.display = "none"
 
 			})
 			navCross.addEventListener('click' , () => {
 				navFull.classList.add("display-none")
-				navCross.classList.add("display-none")
-				hamburger.classList.remove("display-none")
+				navCross.style.display = "none"
+				hamburger.style.display = "block"
 
 			})
 		</script>
