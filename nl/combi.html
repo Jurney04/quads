@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,75 +13,116 @@
 		<nav>
 			<div class="flex name">
 				<img src="../images/logo.png" class="logo" alt="" />
-				<a href="/index.html">Quadadventures <br />Murcia</a>
+				<a href="index.html">Quadadventures <br />Murcia</a>
 			</div>
 			<div class="nav-categories flex space-between">
-				<a href="quads.html" >Quad</a>
+				<a href="quads.html">Quad</a>
 				<a href="buggy.html">Buggy</a>
 				<a href="e-scooter.html">E-scooter</a>
-				<a href="combi.html">Combi</a>
+				<a href="combi.html"  class="underline">Combi</a>
 			</div>
 			<div class="nav-us flex space-between">
-				<a href="about-us.html" class="underline">About us</a>
+				<a href="about-us.html">About us</a>
 				<a href="#" id="contactBTN">Contact</a>
 				<div id="language-flag" class="flex">
-					<a href="" class="underline">EN</a>
-					<a href="../nl/about-us.html">NL</a>
-					<a href="../fr/about-us.html">FR</a>	
+					<a href="../en/combi.html">EN</a>
+					<a href="">NL</a>
+					<a href="../fr/combi.html" >FR</a>
 				</div>
 			</div>
 		</nav>
 		<nav id="nav-mobile" class="display-none">
 			<div class="flex name">
 				<img src="../images/logo.png" class="logo" alt="" />
-				<a href="../index.html">Quadadventures <br />Murcia</a>
+				<a href="index.html">Quadadventures <br />Murcia</a>
 			</div>
 			<i class="fa fa-navicon" id="hamburger"></i>
 			<i class="fa fa-remove" id="nav-cross"></i>
 		</nav>
 		<div id="nav-full-mobile" class="display-none">
 			<div class="nav-categories flex colomn space-between">
-				<a href="quads.html">Quad</a>
-				<a href="buggy.html">Buggy</a>
+				<a href="quads.html" >Quad</a>
+				<a href="buggy.html" >Buggy</a>
 				<a href="e-scooter.html">E-scooter</a>
-				<a href="combi.html">Combi</a>
+				<a href="combi.html"  class="underline">Combi</a>
 			</div>
 			<div class="nav-us flex colomn space-between">
-				<a href="about-us.html"  class="underline">About us</a>
+				<a href="about-us.html">About us</a>
 				<a href="#" id="contactBTN">Contact</a>
 			</div>
 			<div id="language-flag" class="flex space-evenly">
-				<a href="" class="underline">EN</a>
-				<a href="../nl/about-us.html">NL</a>
-				<a href="../fr/about-us.html">FR</a>
+				<a href="../en/combi.html" >EN</a>
+				<a href=""  class="underline"">NL</a>
+				<a href="../fr/combi.html">FR</a>
 			</div>
 		</div>
-		<img src="../images/main-pic.jpg" alt="" class="title-card pic " />
+        <img src="../images/combi-main-image.png" alt="" class="title-card" />
 		<img src="../images/darken.png" alt="" class="title-card dark" />
 		<div class="flex header">
 			<div class="header-info secundary colomn flex space-between">
-				<h1>About us</h1>
+				<h1>Combi</h1>
 				<h3>
-					Learn more about us and what we do.
+					Kunt u niet kiezen? Dan hebben wij de perfecte oplossing voor u. <br /><br />
+Combineer twee ritten en ervaar het rijden met een quad en een buggy.
 				</h3>
 			</div>
-			<img src="../images/exclusion.png" alt="" class="exclusion desktop" />
+			<img src="../images/exclusion.png"  alt="" class="exclusion desktop" />
 			<img src="../images/exclusion-mobile.png" alt="" class="exclusion mobile" />
 		</div>
-		
-		<div class="flex space-between secundary-bg padding main_info">
-			<img src="../images/quads-at-night.jpg" alt="foto quad" class="main_img sec order2 desktop" />
+
+		<div class="main_info combo flex colomn padding secundary-bg">
+			<div class="flex combinations space-between">
+				<div class="combi flex">
+					<img src="../images/quads-1u.png" class="combi-img" alt="" />
+					<img src="../images/darken.png" class="combi-img dark" alt="" />
+					<div class="combi-info">
+						<h1>A quad ride</h1>
+						<ul>
+							<li>1u</li>
+							<li>2u</li>
+							<li>3u30</li>
+						</ul>
+					</div>
+				</div>
+				<p class="plus">+</p>
+				<div class="combi flex">
+					<img src="../images/buggy-side-angle.png" class="combi-img" alt="" />
+					<img src="../images/darken.png" class="combi-img dark" alt="" />
+					<div class="combi-info">
+						<h1>A buggy ride</h1>
+						<ul>
+							<li>1u</li>
+							<li>2u</li>
+							<li>3u30</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contact us</button>
+		</div>
+		<div class="flex space-between primary-bg padding main_info">
+			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2 desktop" />
 			<div class="text-width flex colomn">
-				<h2>OUR GOAL</h2>
+				<h2>BESCHRIJVING</h2>
 				<hr />
 				<p>
-					Because of our passion of quad / buggy driving, we have decided to pass on our experience to others. Our rides feature the maximum off road allowing us to give you an experience with phenomenal views. In doing so, we offer you refreshing drinks at the stops and also an opportunity to take some photos. Thanks to our prior professional instructions, you should not be afraid as an inexperienced driver.
-					Because of our different tour, there is something for everyone.
+					Proef de ultieme avontuurervaring met onze Quad- en Buggy-rit!
+Wil jij de opwindende sensatie ervaren van rijden met zowel een quad als een buggy? Dat kan nu! Boek ons exclusieve combopakket en beleef het beste van twee werelden: het stoere rijden met een quad én het krachtige avontuur met een buggy.
+Wat kun je verwachten? <br>
+•	Quad-rit: Voel de vrijheid terwijl je over ruige terreinen rijdt. <br>
+•	Buggy-rit: Beleef de kick van snelheid en kracht in een echte offroad buggy.
+Speciale aanbieding!
+Boek ons combopakket en ontvang 25€ korting op de totaalprijs. Dit is je kans om twee geweldige avonturen te combineren voor een geweldige prijs!
+Waar wacht je nog op?
+Zet de motor aan en beleef het avontuur van je leven!
+
+					<br /><br />
+					Heb je interesse om rond te rijden op een quad en buggy? Neem dan contact met ons op om een ​​datum en tijd af te spreken.
 				</p>
 			</div>
 		</div>
-		
-		<!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
 		<footer class="flex space-between">
 			<div class="flex space-between colomn footer-info ">
 				<div class="flex">
@@ -105,9 +146,9 @@
 		</footer>
 		<div id="pop-up" class="pop-up flex colomn display-none">
 			<h1>
-				Message us on Whatsapp
+				Contacteer ons op Whatsapp
 			</h1>
-			<h2>(During rides we are difficult to reach, so send Whatsapp text messages)</h2>
+			<h2>(Tijdens ritten zijn we moeilijk bereikbaar, stuur een Whatsapp bericht indien nodig)</h2>
 			<div class="flex">
 				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
 				<a href="https://wa.me/32474508415" target="blank">+32 474 50 84 15</a>
@@ -146,5 +187,5 @@
 
 			})
 		</script>
-	</body>
+    </body>
 </html>
