@@ -138,7 +138,9 @@
 					Alors le « Combi » pourrait être le choix parfait pour vous. <br /><br />
 					Si vous faites ce choix, vous pourrez choisir les activités que vous souhaitez faire. <br /><br />
 					Vous souhaitez faire du quad, du buggy et du bateau ? Alors ce choix est fait pour vous.				</p>
-				<a href="combi.html" class="color-4-bg main_btn secundary left">Lire la suite <i class="fa fa-arrow-right"></i></a>
+				<a href="combi.html" class="color-4-bg main_btn secundary left">Lire la suite <i class="fa fa-arrow-right"></i><div class="discount">
+					25€ discount
+				</div></a>
 			</div>
 		</div>
 		<!-- footer -------------------------------------------------------------------------------------------------------------------------------------->
@@ -191,7 +193,7 @@
 			const navbar = document.getElementById('nav-bar');
 
 			window.addEventListener('scroll', () => {
-				if (window.scrollY > 50) { // Adjust this value based on when you want the color to change
+				if (window.scrollY > 50) { 
 					navbar.classList.add('scrolled');
 				} else {
 					navbar.classList.remove('scrolled');
@@ -201,7 +203,7 @@
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
 
-			// Loop through each element in the NodeList
+			
 			contactShow.forEach(function(contactButton) {
 				contactButton.addEventListener("click", function(e) {
 					e.preventDefault();

@@ -414,6 +414,31 @@ footer p {
 .display-none {
 	display: none;
 }
+.discount {
+	position: absolute;
+	transform: translate(110%, -215%) rotate(30deg);
+	font-size: 1rem;
+	color: red;
+	background-color: #ffffff80;
+	border: red 1px solid;
+	border-radius: 15px;
+	padding: 0.5%;
+	animation-name: rotate;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+}
+@keyframes rotate {
+	0% {
+		transform: translate(110%, -215%) rotate(30deg);
+	}
+	50% {
+		transform: translate(110%, -215%) rotate(10deg);
+	}
+	100% {
+		transform: translate(110%, -215%) rotate(30deg);
+	}
+}
 
 /* =========================================================================================================================================== */
 /* =========================================================================================================================================== */

@@ -71,17 +71,20 @@
 		</div>
 
 		<div class="main_info combo flex colomn padding secundary-bg">
+
+			<h2>Choisissez votre balade en quad et buggy et bénéficiez d'une <span style="color:red; font-weight: 800">réduction de 25€</span> </h2>
 			<div class="flex combinations space-between">
 				<div class="combi flex">
 					<img src="../images/quads-1u.png" class="combi-img" alt="" />
 					<img src="../images/darken.png" class="combi-img dark" alt="" />
 					<div class="combi-info">
-						<h1>A quad ride</h1>
-						<ul>
-							<li>1u</li>
-							<li>2u</li>
-							<li>3u30</li>
-						</ul>
+						<h1>BALADE EN QUAD</h1>
+						<h2>Choisir entre:</h2>
+						<div class="flex space-between">
+							<p>1u</p>
+							<p>2u30</p>
+							<p>3u30</p>
+						</div>
 					</div>
 				</div>
 				<p class="plus">+</p>
@@ -89,17 +92,18 @@
 					<img src="../images/buggy-side-angle.png" class="combi-img" alt="" />
 					<img src="../images/darken.png" class="combi-img dark" alt="" />
 					<div class="combi-info">
-						<h1>A buggy ride</h1>
-						<ul>
-							<li>1u</li>
-							<li>2u</li>
-							<li>3u30</li>
-						</ul>
+						<h1>BALADE EN BUGGY</h1>
+						<h2>Choisir entre:</h2>
+						<div class="flex space-between">
+							<p>1u</p>
+							<p>2u30</p>
+							<p>3u30</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contact us</button>
+			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contactez-nous</button>
 		</div>
 		<div class="flex space-between primary-bg padding main_info">
 			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2 desktop" />
@@ -108,15 +112,23 @@
 				<hr />
 				<p>
 					Goûtez à l'expérience d'aventure ultime avec notre balade en Quad et Buggy !
-Voulez-vous expérimenter la sensation excitante de conduire à la fois un quad et un buggy ? C'est possible maintenant ! Réservez notre forfait combiné exclusif et découvrez le meilleur des deux mondes : la conduite difficile avec un quad et l'aventure puissante avec un buggy.
-À quoi pouvez-vous vous attendre ? <br>
-• Quad Ride : ressentez la liberté lorsque vous roulez sur des terrains accidentés. <br>
-• Balade en buggy : vivez le frisson de la vitesse et de la puissance dans un véritable buggy tout-terrain.
-Offre spéciale!
-Réservez notre forfait combo et bénéficiez d'une réduction de 25 € sur le prix total. C'est votre chance de combiner deux grandes aventures à un prix avantageux !
-Qu'est-ce que tu attends ?
-Allumez le moteur et vivez l’aventure de votre vie !
-
+					Voulez-vous expérimenter la sensation excitante de conduire à la fois un quad et un buggy ? C'est possible maintenant ! Réservez notre forfait combiné exclusif et découvrez le meilleur des deux mondes : la conduite difficile avec un quad et l'aventure puissante avec un buggy.
+					À quoi pouvez-vous vous attendre? 
+				</p>
+			</div>
+		</div>
+		<div class="flex space-between secundary-bg padding main_info">
+			<img src="../images/quads-row.jpg" alt="foto quad" class="main_img sec desktop" />
+			<div class="text-width flex colomn">
+				<h2>À QOUI POUVEZ-VOUS VOUS ATTENDRE?</h2>
+				<hr />
+				<p>
+					• Quad Ride : ressentez la liberté lorsque vous roulez sur des terrains accidentés. <br>
+					• Balade en buggy : vivez le frisson de la vitesse et de la puissance dans un véritable buggy tout-terrain. <br><br>
+					Offre spéciale!
+					Réservez notre forfait combo et bénéficiez d'une réduction de 25 € sur le prix total. C'est votre chance de combiner deux grandes aventures à un prix avantageux !
+					Qu'est-ce que tu attends ?
+					Allumez le moteur et vivez l’aventure de votre vie !
 					<br /><br />
 					Envie d'une balade en quad ou en buggy ? Contactez-nous pour convenir d'une date et d'une heure.
 				</p>
@@ -160,7 +172,7 @@ Allumez le moteur et vivez l’aventure de votre vie !
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
 
-			// Loop through each element in the NodeList
+			
 			contactShow.forEach(function(contactButton) {
 				contactButton.addEventListener("click", function(e) {
 					e.preventDefault();

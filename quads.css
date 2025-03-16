@@ -226,22 +226,17 @@ nav {
 	text-align: center;
 }
 .combi-info h1 {
-	font-size: 2.75vw;
+	font-size: 2.75vw !important;
 	text-align: center;
+	margin-bottom: 1vw;
 }
 .combi-info p {
-	font-size: 2vw;
+	font-size: 2vw !important;
 	font-weight: bold;
-	text-decoration: underline;
 }
-.combi-info li {
-	font-size: 2vw;
-	list-style: none;
-	margin-bottom: 0.5rem;
-}
-.combi-info ul {
-	margin-left: 0;
-	padding: 0;
+
+.combi-info div {
+	width: 60%;
 }
 .combi-img {
 	width: 100%;

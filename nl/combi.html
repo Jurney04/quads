@@ -63,7 +63,7 @@
 				<h1>Combi</h1>
 				<h3>
 					Kunt u niet kiezen? Dan hebben wij de perfecte oplossing voor u. <br /><br />
-Combineer twee ritten en ervaar het rijden met een quad en een buggy.
+					Combineer twee ritten en ervaar het rijden met een quad en een buggy.
 				</h3>
 			</div>
 			<img src="../images/exclusion.png"  alt="" class="exclusion desktop" />
@@ -71,17 +71,19 @@ Combineer twee ritten en ervaar het rijden met een quad en een buggy.
 		</div>
 
 		<div class="main_info combo flex colomn padding secundary-bg">
+			<h2>Kies je quad- en buggyrit en ontvang <span style="color:red; font-weight: 800">25€ korting</span> </h2>
 			<div class="flex combinations space-between">
 				<div class="combi flex">
 					<img src="../images/quads-1u.png" class="combi-img" alt="" />
 					<img src="../images/darken.png" class="combi-img dark" alt="" />
 					<div class="combi-info">
-						<h1>A quad ride</h1>
-						<ul>
-							<li>1u</li>
-							<li>2u</li>
-							<li>3u30</li>
-						</ul>
+						<h1>Quad rit</h1>
+						<h2>Kies tussen:</h2>
+						<div class="flex space-between">
+							<p>1u</p>
+							<p>2u30</p>
+							<p>3u30</p>
+						</div>
 					</div>
 				</div>
 				<p class="plus">+</p>
@@ -89,33 +91,43 @@ Combineer twee ritten en ervaar het rijden met een quad en een buggy.
 					<img src="../images/buggy-side-angle.png" class="combi-img" alt="" />
 					<img src="../images/darken.png" class="combi-img dark" alt="" />
 					<div class="combi-info">
-						<h1>A buggy ride</h1>
-						<ul>
-							<li>1u</li>
-							<li>2u</li>
-							<li>3u30</li>
-						</ul>
+						<h1>Buggy rit</h1>
+						<h2>Kies tussen:</h2>
+						<div class="flex space-between">
+							<p>1u</p>
+							<p>2u30</p>
+							<p>3u30</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contact us</button>
+			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contacteer ons</button>
 		</div>
 		<div class="flex space-between primary-bg padding main_info">
-			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2 desktop" />
+			<img src="../images/quads-row.jpg" alt="foto quad" class="main_img sec order2 desktop" />
 			<div class="text-width flex colomn">
 				<h2>BESCHRIJVING</h2>
 				<hr />
 				<p>
 					Proef de ultieme avontuurervaring met onze Quad- en Buggy-rit!
-Wil jij de opwindende sensatie ervaren van rijden met zowel een quad als een buggy? Dat kan nu! Boek ons exclusieve combopakket en beleef het beste van twee werelden: het stoere rijden met een quad én het krachtige avontuur met een buggy.
-Wat kun je verwachten? <br>
-•	Quad-rit: Voel de vrijheid terwijl je over ruige terreinen rijdt. <br>
-•	Buggy-rit: Beleef de kick van snelheid en kracht in een echte offroad buggy.
-Speciale aanbieding!
-Boek ons combopakket en ontvang 25€ korting op de totaalprijs. Dit is je kans om twee geweldige avonturen te combineren voor een geweldige prijs!
-Waar wacht je nog op?
-Zet de motor aan en beleef het avontuur van je leven!
+					Wil jij de opwindende sensatie ervaren van rijden met zowel een quad als een buggy? Dat kan nu! Boek ons exclusieve combopakket en beleef het beste van twee werelden: het stoere rijden met een quad én het krachtige avontuur met een buggy.
+					Wat kun je verwachten?
+				</p>
+			</div>
+		</div>
+		<div class="flex space-between secundary-bg padding main_info">
+			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec desktop" />
+			<div class="text-width flex colomn">
+				<h2>WAT KAN JE VERWACHTEN?</h2>
+				<hr />
+				<p>
+					•	Quad-rit: Voel de vrijheid terwijl je over ruige terreinen rijdt. <br>
+					•	Buggy-rit: Beleef de kick van snelheid en kracht in een echte offroad buggy. <br><br>
+					Speciale aanbieding!
+					Boek ons combopakket en ontvang 25€ korting op de totaalprijs. Dit is je kans om twee geweldige avonturen te combineren voor een geweldige prijs!
+					Waar wacht je nog op?
+					Zet de motor aan en beleef het avontuur van je leven!
 
 					<br /><br />
 					Heb je interesse om rond te rijden op een quad en buggy? Neem dan contact met ons op om een ​​datum en tijd af te spreken.
@@ -160,7 +172,7 @@ Zet de motor aan en beleef het avontuur van je leven!
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
 
-			// Loop through each element in the NodeList
+			
 			contactShow.forEach(function(contactButton) {
 				contactButton.addEventListener("click", function(e) {
 					e.preventDefault();

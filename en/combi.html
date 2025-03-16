@@ -71,17 +71,19 @@
 		</div>
 
 		<div class="main_info combo flex colomn padding secundary-bg">
+			<h2>Choose your quad and buggy ride and get a <span style="color:red; font-weight: 800">25€ discount</span> </h2>
 			<div class="flex combinations space-between">
 				<div class="combi flex">
 					<img src="../images/quads-1u.png" class="combi-img" alt="" />
 					<img src="../images/darken.png" class="combi-img dark" alt="" />
 					<div class="combi-info">
-						<h1>A quad ride</h1>
-						<ul>
-							<li>1u</li>
-							<li>2u</li>
-							<li>3u30</li>
-						</ul>
+						<h1>Quad ride</h1>
+						<h2>Choose between:</h2>
+						<div class="flex space-between">
+							<p>1u</p>
+							<p>2u30</p>
+							<p>3u30</p>
+						</div>
 					</div>
 				</div>
 				<p class="plus">+</p>
@@ -89,12 +91,13 @@
 					<img src="../images/buggy-side-angle.png" class="combi-img" alt="" />
 					<img src="../images/darken.png" class="combi-img dark" alt="" />
 					<div class="combi-info">
-						<h1>A buggy ride</h1>
-						<ul>
-							<li>1u</li>
-							<li>2u</li>
-							<li>3u30</li>
-						</ul>
+						<h1>Buggy ride</h1>
+						<h2>Choose between:</h2>
+						<div class="flex space-between">
+							<p>1u</p>
+							<p>2u30</p>
+							<p>3u30</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -108,9 +111,18 @@
 				<hr />
 				<p>
 					Experience the ultimate adventure with our Quad and Buggy ride! Do you want to experience the thrill of riding both a quad and a buggy? Now you can! Book our exclusive combo package and experience the best of both worlds: the tough ride
-					with a quad and the powerful adventure with a buggy. What can you expect? <br />
+					with a quad and the powerful adventure with a buggy. <br> <br>
+				</p>
+			</div>
+		</div>
+		<div class="flex space-between secundary-bg padding main_info">
+			<img src="../images/quads-row.jpg" alt="foto quad" class="main_img sec desktop" />
+			<div class="text-width flex colomn">
+				<h2>WHAT CAN YOU EXPECT?</h2>
+				<hr />
+				<p>
 					• Quad ride: Feel the freedom while driving over rough terrain. <br />
-					• Buggy ride: Experience the thrill of speed and power in a real off-road buggy. Special offer! Book our combo package and receive a €25 discount on the total price. This is your chance to combine two great adventures for one great price!
+					• Buggy ride: Experience the thrill of speed and power in a real off-road buggy. <br> <br> Special offer! Book our combo package and receive a €25 discount on the total price. This is your chance to combine two great adventures for one great price!
 					What are you waiting for? Start the engine and experience the adventure of a lifetime!
 
 					<br /><br />
@@ -155,7 +167,7 @@
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
 
-			// Loop through each element in the NodeList
+			
 			contactShow.forEach(function(contactButton) {
 				contactButton.addEventListener("click", function(e) {
 					e.preventDefault();
