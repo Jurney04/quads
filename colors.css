@@ -114,7 +114,7 @@ hr {
 		text-decoration: none;
 	}
 	.header-info h1 {
-		font-size: 15vw;
+		font-size: 15vw !important;
 	}
 	.header-info h3 {
 		font-size: 5vw;
