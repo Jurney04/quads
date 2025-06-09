@@ -99,6 +99,7 @@ nav a {
 .logo {
 	height: 5vh;
 	margin-right: 1vh;
+	max-height: 5vh;
 }
 .name {
 	width: fit-content;
@@ -446,7 +447,7 @@ footer p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #ffffffec;
+	background-color: #ffffffc9;
 }
 .coming-soon h1 {
 	font-size: 5vw !important;
@@ -693,5 +694,11 @@ footer p {
 		100% {
 			transform: translate(125%, -230%) rotate(30deg);
 		}
+	}
+	.coming-soon {
+		padding: 50% 15%;
+	}
+	.coming-soon h1 {
+		font-size: 15vw !important;
 	}
 }
