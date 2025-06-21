@@ -441,20 +441,48 @@ footer p {
 	}
 }
 .coming-soon {
-	z-index: 1000;
+	z-index: 2;
 	position: fixed;
 	padding: 10% 25%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #ffffffc9;
+	background-color: #ffffffda;
 }
 .coming-soon h1 {
 	font-size: 5vw !important;
 	color: red;
 	text-align: center;
 }
+.ComingScrolled {
+	animation-name: comingSoonAnimation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
 
+.ComingScrolledReverse {
+	animation-name: comingSoonAnimationReverse;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes comingSoonAnimation {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes comingSoonAnimationReverse {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 /* =========================================================================================================================================== */
 /* =========================================================================================================================================== */
 /* =========================================================================================================================================== */
