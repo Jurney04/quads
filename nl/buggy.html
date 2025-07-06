@@ -56,7 +56,7 @@
 				<a href="../fr/buggy.html">FR</a>
 			</div>
 		</div>
-		<div class="coming-soon" id="coming-soon"><h1>Binnenkort Beschikbaar</h1></div>
+		
 		<img src="../images/buggy-sunset.jpg" alt="" class="title-card" />
 		<img src="../images/darken.png" alt="" class="title-card dark" />
 		<div class="flex header">
@@ -149,7 +149,7 @@
 			<button class="color-2-bg btn-contact secundary" id="contactBTN">Contacteer ons</button>
 		</div>
 		<div class="flex space-between primary-bg padding main_info">
-			<img src="../images/buggy.webp" alt="foto quad" class="main_img sec order2 desktop" />
+			<img src="../images/buggy-beschrijving.jpg" alt="foto quad" class="main_img sec order2 desktop" />
 			<div class="text-width flex colomn">
 				<h2>BESCHRIJVING</h2>
 				<hr />
@@ -440,8 +440,8 @@
 			<div class="div-2 flex space-between">
 				<img class="gallery-image-margin-right gallery-image-margin-bottom" src="../images/IMG-20240921-WA0020.jpg" alt="" />
 				<img class="gallery-image-margin-bottom" src="../images/sunset.jpg" alt="" />
-				<img class="" src="../images/Schermafbeelding 2025-01-26 125728.jpg" alt="" />
-				<img class="" src="../images/utv 400.jpg" alt="" />
+				<img class="" src="../images/buggy-2x-left-closer.jpg" alt="" />
+				<img class="" src="../images/buggy-1x.jpg" alt="" />
 				<img class="" src="../images/wilderness.jpeg" alt="" />
 			</div>
 		</div>
@@ -484,17 +484,7 @@
 			<i class="fa fa-remove" id="cross"></i>
 		</div>
 		<script>
-			const comingSoon = document.getElementById('coming-soon');
-
-			window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) { 
-                comingSoon.classList.add('ComingScrolled');
-                comingSoon.classList.remove('ComingScrolledReverse');
-            } else {
-                comingSoon.classList.remove('ComingScrolled');
-                comingSoon.classList.add('ComingScrolledReverse');
-            }
-        });
+			
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");
