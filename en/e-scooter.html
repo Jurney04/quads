@@ -260,7 +260,16 @@
 			<div class="flex space-between colomn footer-info ">
 				<div class="flex">
 					<img src="../images/whatsapp.png" class="footer-logo" alt="" />
-					<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+				<a href="https://wa.me/34614336416" target="_blank"
+   onclick="gtag('event', 'Whatsapp_contact_link', {
+     event_category: 'engagement',
+     event_label: 'Whatsapp Contact Link',
+     event_callback: function(){
+       window.open('https://wa.me/34614336416', '_blank');
+     }
+   }); return false;">
+   +34 614 33 64 16
+</a>
 				</div>
 				<div class="flex">
 					<img src="../images/facebook.png" class="footer-logo" alt="" />
@@ -285,7 +294,16 @@
 			<h2>(During rides we are difficult to reach, so send Whatsapp text messages)</h2>
 			<div class="flex">
 				<img src="../images/whatsapp-black.png" class="contact-logo" alt="" />
-				<a href="https://wa.me/34614336416" target="blank">+34 614 33 64 16</a>
+			<a href="https://wa.me/34614336416" target="_blank"
+   onclick="gtag('event', 'Whatsapp_contact_link', {
+     event_category: 'engagement',
+     event_label: 'Whatsapp Contact Link',
+     event_callback: function(){
+       window.open('https://wa.me/34614336416', '_blank');
+     }
+   }); return false;">
+   +34 614 33 64 16
+</a>
 			</div>
 			<i class="fa fa-remove" id="cross"></i>
 		</div>
