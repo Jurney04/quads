@@ -78,6 +78,7 @@ nav {
 	flex-direction: column;
 	justify-content: space-between;
 	padding-top: 10%;
+	position: relative;
 }
 .route-info h1 {
 	font-size: 4vw;
@@ -92,10 +93,12 @@ nav {
 }
 .route-beschrijving {
 	position: absolute;
-	height: 100;
+	height: 100%;
 	width: 100%;
+	top: 0;
 	z-index: 2;
 	opacity: 0;
+	display: flex;
 }
 .route-beschrijving:hover {
 	animation-name: change-opacity;
@@ -105,9 +108,23 @@ nav {
 	animation-iteration-count: 1;
 }
 
+.beschrijving-image {
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	position: absolute;
+	object-fit: cover;
+	z-index: 0;
+	top: 0;
+}
 .beschrijving-info {
 	position: relative;
 	padding: 10%;
+}
+.click-info {
+	font-size: 2vh !important;
+	margin-top: 7.5vh;
+	text-align: center;
 }
 @keyframes change-opacity {
 	0% {
