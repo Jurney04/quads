@@ -112,6 +112,7 @@ nav a {
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
 }
+
 /* ____________________________________________________________________________________________________________________________________ */
 .pic {
 	position: absolute;
@@ -561,7 +562,22 @@ footer p {
 		align-self: center;
 		justify-content: space-evenly;
 	}
-
+	#language-bar {
+		position: absolute;
+		display: flex;
+		right: 0;
+		top: 8vh;
+		width: 100%;
+		height: 3vh;
+		align-self: center;
+		z-index: 1;
+		justify-content: space-evenly;
+		background-color: #ffffff;
+		font-size: 4vw;
+	}
+	#language-bar a {
+		color: black;
+	}
 	.cards {
 		width: 80%;
 		/* width: 71%; */
