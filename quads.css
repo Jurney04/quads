@@ -53,12 +53,19 @@ nav {
 .all-routes {
 	width: 100%;
 }
-.routes {
+.buggy .routes {
 	height: 65vh;
+}
+.routes {
+	height: 40vh;
 	width: 25%;
 	border: red 5px solid;
 	border-radius: 35px;
 	position: relative;
+}
+
+.quads-grid .routes {
+	width: 100%;
 }
 
 .route-img {
@@ -77,15 +84,21 @@ nav {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding-top: 10%;
+	padding-top: 5%;
 	position: relative;
+}
+.buggy .route-info {
+	padding: 10%;
 }
 .route-info h1 {
 	font-size: 4vw;
 }
+.buggy .route-info h2 {
+	margin-top: -25%;
+}
 .route-info h2 {
 	font-size: 2vw;
-	margin-top: -25%;
+	margin-top: 0;
 }
 .sightseeing p {
 	margin: 0;
@@ -117,9 +130,12 @@ nav {
 	z-index: 0;
 	top: 0;
 }
+.buggy .beschrijving-info {
+	padding: 10%;
+}
 .beschrijving-info {
 	position: relative;
-	padding: 10%;
+	padding: 5%;
 }
 .click-info {
 	font-size: 2vh !important;
@@ -300,10 +316,22 @@ nav {
 
 	.all-routes {
 		width: 100%;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+	.quads-grid {
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		gap: 5vh;
+	}
 	.all-routes h3 {
+		margin-bottom: 5vh;
+	}
+	.buggy .routes {
+		height: 32.5vh;
+		width: 100%;
 		margin-bottom: 5vh;
 	}
 	.routes {
@@ -420,4 +448,11 @@ nav {
 	.plus {
 		font-size: 15vw !important;
 	}
+}
+
+.quads-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	width: 100%;
 }
