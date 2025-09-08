@@ -22,6 +22,9 @@ li {
 	display: flex;
 	vertical-align: middle;
 }
+.mobile {
+	display: none;
+}
 .colomn {
 	flex-direction: column;
 }
