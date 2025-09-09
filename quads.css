@@ -53,9 +53,6 @@ nav {
 .all-routes {
 	width: 100%;
 }
-.buggy .routes {
-	height: 65vh;
-}
 .routes {
 	height: 40vh;
 	width: 25%;
@@ -87,14 +84,8 @@ nav {
 	padding-top: 5%;
 	position: relative;
 }
-.buggy .route-info {
-	padding: 10%;
-}
 .route-info h1 {
 	font-size: 4vw;
-}
-.buggy .route-info h2 {
-	margin-top: -25%;
 }
 .route-info h2 {
 	font-size: 2vw;
@@ -129,9 +120,6 @@ nav {
 	object-fit: cover;
 	z-index: 0;
 	top: 0;
-}
-.buggy .beschrijving-info {
-	padding: 10%;
 }
 .beschrijving-info {
 	position: relative;
@@ -327,11 +315,6 @@ nav {
 		gap: 5vh;
 	}
 	.all-routes h3 {
-		margin-bottom: 5vh;
-	}
-	.buggy .routes {
-		height: 32.5vh;
-		width: 100%;
 		margin-bottom: 5vh;
 	}
 	.routes {
