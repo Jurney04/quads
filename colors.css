@@ -108,8 +108,9 @@ hr {
 .bold {
 	font-weight: bold;
 }
-.beschrijving-info p {
-	font-size: 1.15vw !important;
+
+.hover {
+	font-size: 0.75rem !important;
 }
 @media screen and (max-width: 768px) {
 	p {

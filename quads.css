@@ -53,89 +53,119 @@ nav {
 .all-routes {
 	width: 100%;
 }
-.routes {
-	height: 40vh;
-	width: 25%;
+
+.quads-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	width: 100%;
+}
+
+.route-card-description h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #fff;
+	text-align: left;
+}
+.route-card {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
 	border: red 5px solid;
-	border-radius: 35px;
-	position: relative;
 }
 
-.quads-grid .routes {
+.route-card-img {
 	width: 100%;
-}
-
-.route-img {
-	width: 100%;
-	height: 100%;
-	border-radius: 30px;
-	position: absolute;
+	height: 200px;
 	object-fit: cover;
-	z-index: 0;
-}
-.route-info {
-	text-align: center;
-	z-index: 1;
-	height: 90%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	padding-top: 5%;
-	position: relative;
-}
-.route-info h1 {
-	font-size: 4vw;
-}
-.route-info h2 {
-	font-size: 2vw;
-	margin-top: 0;
-}
-.sightseeing p {
-	margin: 0;
-	font-size: 1.5vw;
-}
-.route-beschrijving {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	z-index: 2;
-	opacity: 0;
-	display: flex;
-}
-.route-beschrijving:hover {
-	animation-name: change-opacity;
-	animation-duration: 1s;
-
-	animation-fill-mode: forwards;
-	animation-iteration-count: 1;
 }
 
-.beschrijving-image {
-	width: 100%;
-	height: 100%;
-	border-radius: 30px;
-	position: absolute;
-	object-fit: cover;
-	z-index: 0;
-	top: 0;
+.route-card-content {
+	padding: 20px;
 }
-.beschrijving-info {
-	position: relative;
-	padding: 5%;
+
+.route-card-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
 }
-.click-info {
-	font-size: 2vh !important;
-	margin-top: 7.5vh;
-	text-align: center;
+
+.route-card-price {
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #ff0000;
+	margin-bottom: 10px;
 }
-@keyframes change-opacity {
-	0% {
-		opacity: 0;
+
+.route-card-description {
+	display: none; /* Hidden by default */
+	background-color: rgba(0, 0, 0, 0.8); /* Keep background for description content */
+	color: #fff;
+	padding: 20px;
+	transition: height 0.3s ease; /* Transition for smooth expansion */
+}
+
+.route-card.active .route-card-description {
+	display: block; /* Show description */
+}
+
+.info-text {
+	font-size: 1vw !important;
+	color: #666;
+	margin-top: 10px;
+}
+
+.mobile-info {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.quads-grid {
+		grid-template-columns: repeat(2, 1fr);
 	}
-	to {
+}
+
+@media screen and (max-width: 768px) {
+	.desktop-info {
+		display: none;
+	}
+
+	.mobile-info {
+		display: block;
+	}
+
+	.quads-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.route-card {
+		height: auto; /* Ensure it expands */
+		margin-bottom: 5vh;
+	}
+	.route-card.active {
+		height: auto; /* Ensure it expands */
+	}
+	.route-card-description {
+		position: relative;
+		top: 0;
 		opacity: 1;
+		background-color: transparent;
+		color: initial;
+		padding: 10px; /* Reduced padding */
+		border-top: 1px solid #ccc; /* Add a line */
+		margin-top: 10px; /* Reduce gap */
+	}
+	.route-card-description h1 {
+		text-align: center;
+		color: initial;
+	}
+	.info-text {
+		font-size: 3.5vw !important;
+		color: #666;
+		margin-top: 10px;
 	}
 }
 /* _____________________________________________________________ */
@@ -272,170 +302,4 @@ nav {
 	font-size: 5vw !important;
 	margin: 0;
 	align-self: center;
-}
-@media screen and (max-width: 768px) {
-	.title-card {
-		height: 90vh;
-	}
-	.desktop {
-		display: none;
-	}
-	.mobile {
-		display: block;
-	}
-	.exclusion {
-		top: 8vh;
-		width: 100%;
-		position: relative;
-	}
-	.header {
-		justify-content: center;
-		vertical-align: middle;
-		display: grid;
-		position: relative;
-		height: 90vh;
-		margin-bottom: 7.5vh;
-	}
-	.header-info {
-		height: 50%;
-		padding-top: 50%;
-		max-width: 80%;
-	}
-
-	.all-routes {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.quads-grid {
-		display: flex !important;
-		flex-direction: column;
-		align-items: center;
-		gap: 5vh;
-	}
-	.all-routes h3 {
-		margin-bottom: 5vh;
-	}
-	.routes {
-		height: 32.5vh;
-		width: 100%;
-		margin-bottom: 5vh;
-		transition: height 0.5s ease-in-out;
-	}
-	.routes:hover {
-		height: 60vh;
-	}
-	.route-info {
-		text-align: center;
-		padding: 5% 2.5% 0 2.5%;
-	}
-	.route-info h1 {
-		font-size: 12.5vw;
-	}
-	.route-info h2 {
-		font-size: 5vw;
-		margin-top: 0;
-	}
-	.route-info p {
-		font-size: 4.5vw;
-	}
-	.sightseeing p {
-		margin: -2.5% 0 0 0;
-		font-size: 7.5vw;
-	}
-
-	.route-beschrijving {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		z-index: 2;
-		opacity: 0;
-	}
-	.beschrijving-info {
-		position: relative;
-		padding: 10%;
-	}
-	.beschrijving-info h1 {
-		font-size: 7.5vw;
-	}
-	.beschrijving-info p {
-		font-size: 3.5vw;
-	}
-	.btn-contact {
-		margin-top: 0vh;
-		padding: 1.5vh 15vw;
-	}
-	.icon {
-		object-fit: contain;
-		margin-right: 0.5vw;
-		width: 5vw;
-	}
-	.rule p {
-		margin: 1vh;
-		font-size: 1rem;
-	}
-	.small-font {
-		font-size: 0.75rem;
-	}
-	.rule-align {
-		width: 50vw;
-	}
-	.rules img {
-		object-fit: contain;
-	}
-	.rules {
-		margin-top: 5vh;
-	}
-	.e-scooter {
-		width: 100%;
-		margin-bottom: 5vh;
-	}
-	.scooter-info {
-		align-items: center;
-	}
-	.scooter-info h1 {
-		font-size: 12vw;
-	}
-	.scooter-info p {
-		font-size: 7.5vw;
-	}
-	.scooter-info li {
-		font-size: 5vw;
-	}
-	.scooter-info div {
-		flex-direction: column;
-	}
-	.combinations {
-		flex-direction: column;
-		width: 100%;
-		height: max-content;
-		margin: 5vh 0;
-	}
-	.combi {
-		width: 100%;
-	}
-	.combi-info h1 {
-		font-size: 10vw !important;
-		text-align: center;
-		margin-bottom: 1vw;
-	}
-	.combi-info p {
-		font-size: 6vw !important;
-		font-weight: bold;
-	}
-
-	.combi-info div {
-		width: 60%;
-	}
-	.plus {
-		font-size: 15vw !important;
-	}
-}
-
-.quads-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
-	width: 100%;
 }
