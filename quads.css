@@ -29,6 +29,8 @@ nav {
 	vertical-align: middle;
 	display: grid;
 	position: relative;
+	top: 5vh;
+	margin-bottom: 5vh;
 }
 .header-info {
 	vertical-align: middle;
@@ -135,21 +137,40 @@ nav {
 	.desktop-info {
 		display: none;
 	}
-
 	.mobile-info {
 		display: block;
 	}
-
+	.mobile {
+		display: block;
+	}
+	.header {
+		position: relative;
+		height: 90vh;
+		z-index: 0;
+		width: 100%;
+		align-items: center;
+		margin-bottom: 8vh;
+		top: 0vh;
+	}
+	.exclusion {
+		position: absolute;
+		width: 100%;
+		align-self: center;
+		top: 8vh;
+	}
+	.title-card {
+		z-index: -1;
+		height: 100%;
+		object-fit: cover;
+		width: 100%;
+	}
 	.quads-grid {
 		grid-template-columns: 1fr;
+		position: unset;
 	}
-
 	.route-card {
 		height: auto; /* Ensure it expands */
 		margin-bottom: 5vh;
-	}
-	.route-card.active {
-		height: auto; /* Ensure it expands */
 	}
 	.route-card-description {
 		position: relative;
