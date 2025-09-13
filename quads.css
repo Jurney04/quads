@@ -160,6 +160,7 @@ nav {
 		padding: 10px; /* Reduced padding */
 		border-top: 1px solid #ccc; /* Add a line */
 		margin-top: 10px; /* Reduce gap */
+		transform: none;
 	}
 	.route-card-description h1 {
 		text-align: center;
