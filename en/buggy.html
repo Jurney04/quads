@@ -503,15 +503,19 @@
 			let contactShow = document.querySelectorAll("#contactBTN");
 
 			
-			contactShow.forEach(function(contactButton) {
-				contactButton.addEventListener("click", function(e) {
+			contactShow.forEach(function (contactButton) {
+				contactButton.addEventListener("click", function (e) {
 					e.preventDefault();
 					popup.classList.remove("display-none");
+					gtag('event', 'Contact_popup_opened', {
+						'event_category': 'engagement',
+						'event_label': 'Contact Popup Opened'
+					});
 				});
 			});
-			cross.addEventListener("click",() => {
-				popup.classList.add("display-none")
-			})
+			cross.addEventListener("click", () => {
+				popup.classList.add("display-none");
+			});
 			let navCross = document.getElementById("nav-cross")
 			let hamburger = document.getElementById("hamburger")
 			let navFull = document.getElementById("nav-full-mobile")
