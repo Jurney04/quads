@@ -1,4 +1,4 @@
-# 🌐 Quads
+# 🌐 Quadadventure-Murcia
 
 A simple static website built with **HTML**, **CSS**, and **JavaScript**.  
 This project focuses on clean design, responsive layout, and basic DOM interactivity.
