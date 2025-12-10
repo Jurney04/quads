@@ -40,6 +40,12 @@
 .cky-btn {
 	background-color: #e83b0a !important;
 	border: none !important;
+	border-radius: 15px !important;
+}
+.cky-btn-customize {
+	border: #e83b0a 1px solid !important;
+	color: #e83b0a !important;
+	background-color: none !important;
 }
 /* __________________________________________________________________________ */
 .font1 {
