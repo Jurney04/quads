@@ -45,7 +45,10 @@
 .cky-btn-customize {
 	border: #e83b0a 1px solid !important;
 	color: #e83b0a !important;
-	background-color: none !important;
+	background-color: #ffffff !important;
+}
+.cky-consent-container {
+	border-radius: 25px;
 }
 /* __________________________________________________________________________ */
 .font1 {
