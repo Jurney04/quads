@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../style.css" />
-		<link rel="stylesheet" href="../colors.css" />
-		<link rel="stylesheet" href="../quads.css" />
-		<title>Quadadventures Murcia</title>
-		<link rel="icon" type="image/png" href="./../images/favicon.png" />
-	</head> <!-- Google tag (gtag.js) -->
+		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-P7NN292QD4"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
@@ -18,7 +11,19 @@
 			gtag("js", new Date());
 			gtag("config", "G-P7NN292QD4");
 		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="../colors.css" />
+		<link rel="stylesheet" href="../quads.css" />
+		<title>Quadadventures Murcia</title>
+		<link rel="icon" type="image/png" href="./../images/favicon.png" />
+	</head> 
 	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P33GSGLF"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 		<nav>
 			<div class="flex name">
 				<a href="index.html"><img src="../images/logo.png" class="logo" alt="" /></a>
@@ -141,88 +146,11 @@
 			</div>
 			<i class="fa fa-remove" id="cross"></i>
 		</div>
-		<div id="cookie-banner">
-			We use cookies to analyse traffic (Google Analytics).
-			<button id="cookie-accept" style="margin-left: 10px">Accept</button>
-			<button id="cookie-reject" style="margin-left: 5px">Reject</button>
-		</div>
+		<button id="cookie-reject">Reject</button>
+			<button id="cookie-accept">Accept</button>
 		<script>
-			// Show cookie banner if no decision yet
-			if (!localStorage.getItem("cookie-consent")) {
-				document.getElementById("cookie-banner").style.display = "block";
-			}
-
-			// Click: Accept
-			document.getElementById("cookie-accept").onclick = function () {
-				localStorage.setItem("cookie-consent", "accepted");
-				loadAnalytics();
-				document.getElementById("cookie-banner").style.display = "none";
-			};
-
-			// Click: Reject
-			document.getElementById("cookie-reject").onclick = function () {
-				localStorage.setItem("cookie-consent", "rejected");
-				document.getElementById("cookie-banner").style.display = "none";
-			};
-
-			// Load GA if already accepted before
-			if (localStorage.getItem("cookie-consent") === "accepted") {
-				loadAnalytics();
-			}
-
-			function loadAnalytics() {
-				// Add GA script dynamically
-				var gaScript = document.createElement("script");
-				gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-P7NN292QD4";
-				gaScript.async = true;
-				document.head.appendChild(gaScript);
-
-				window.dataLayer = window.dataLayer || [];
-				function gtag() {
-					dataLayer.push(arguments);
-				}
-
-				gtag("js", new Date());
-				gtag("config", "G-P7NN292QD4", { anonymize_ip: true });
-			}
-			// Show cookie banner if no decision yet
-			if (!localStorage.getItem("cookie-consent")) {
-				document.getElementById("cookie-banner").style.display = "block";
-			}
-
-			// Click: Accept
-			document.getElementById("cookie-accept").onclick = function () {
-				localStorage.setItem("cookie-consent", "accepted");
-				loadAnalytics();
-				document.getElementById("cookie-banner").style.display = "none";
-			};
-
-			// Click: Reject
-			document.getElementById("cookie-reject").onclick = function () {
-				localStorage.setItem("cookie-consent", "rejected");
-				document.getElementById("cookie-banner").style.display = "none";
-			};
-
-			// Load GA if already accepted before
-			if (localStorage.getItem("cookie-consent") === "accepted") {
-				loadAnalytics();
-			}
-
-			function loadAnalytics() {
-				// Add GA script dynamically
-				var gaScript = document.createElement("script");
-				gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-P7NN292QD4";
-				gaScript.async = true;
-				document.head.appendChild(gaScript);
-
-				window.dataLayer = window.dataLayer || [];
-				function gtag() {
-					dataLayer.push(arguments);
-				}
-
-				gtag("js", new Date());
-				gtag("config", "G-P7NN292QD4", { anonymize_ip: true });
-			}
+			
+			
 			let cross = document.getElementById("cross");
 			let popup = document.getElementById("pop-up");
 			let contactShow = document.querySelectorAll("#contactBTN");

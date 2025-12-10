@@ -117,18 +117,36 @@ nav a {
 }
 #cookie-banner {
 	position: fixed;
-	bottom: 0;
-	left: 0;
+	bottom: 1vh;
+	left: 1vh;
 	right: 0;
 	padding: 15px;
 	background: #ffffff;
-	border-top: 1px solid #ccc;
+	border-radius: 25px;
 	display: none;
 	z-index: 9999;
 	font-family: sans-serif;
 	font-size: 14px;
+	width: 12.5vw;
+	height: 10vh;
 	text-align: center;
 }
+#cookie-accept {
+	margin-left: 10px;
+	margin-top: 15px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 5px 10px;
+}
+#cookie-reject {
+	margin-left: 5px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	border-radius: 25px;
+	padding: 5px 10px;
+}
+
 /* ____________________________________________________________________________________________________________________________________ */
 .pic {
 	position: absolute;
