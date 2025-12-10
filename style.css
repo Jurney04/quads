@@ -115,7 +115,20 @@ nav a {
 	animation-fill-mode: forwards;
 	animation-iteration-count: 1;
 }
-
+#cookie-banner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	background: #ffffff;
+	border-top: 1px solid #ccc;
+	display: none;
+	z-index: 9999;
+	font-family: sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
 /* ____________________________________________________________________________________________________________________________________ */
 .pic {
 	position: absolute;
