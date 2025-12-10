@@ -320,17 +320,6 @@ footer p {
 	margin: 0;
 	font-size: 1.25vw;
 }
-.footer-adress {
-	height: 100%;
-	text-align: right;
-	align-self: flex-end;
-	vertical-align: text-top;
-	width: 100%;
-}
-.footer-small-font {
-	font-size: 1vw !important;
-	margin-top: 0.5vh;
-}
 .rights {
 	font-size: 0.75rem !important;
 	margin-left: 0;
@@ -524,14 +513,6 @@ footer p {
 	#nav-full-mobile a {
 		color: #000;
 		margin-bottom: 2.5vh;
-	}
-	#nav-full-mobile .card {
-		height: 10%;
-		width: 100%;
-		border-radius: 1.5vh;
-		margin-bottom: 2.5vh;
-		flex-direction: row;
-		text-decoration: none;
 	}
 	.nav-categories {
 		width: 100%;
@@ -742,9 +723,6 @@ footer p {
 		50% {
 			transform: translate(125%, -230%) rotate(10deg);
 		}
-		100% {
-			transform: translate(125%, -230%) rotate(30deg);
-		}
 	}
 	.coming-soon {
 		padding: 50% 15%;
@@ -752,4 +730,8 @@ footer p {
 	.coming-soon h1 {
 		font-size: 15vw !important;
 	}
+}
+
+#cookieyes-banner, #cookieyes-banner * {
+  font-family: "lft-etica", sans-serif !important;
 }
