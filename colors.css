@@ -50,6 +50,9 @@
 .cky-consent-container {
 	border-radius: 25px;
 }
+.cky-box-bottom-left {
+	bottom: 30vh !important;
+}
 /* __________________________________________________________________________ */
 .font1 {
 	font-size: 4rem;
