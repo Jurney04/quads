@@ -36,6 +36,10 @@
 .color-4-bg {
 	background-color: #c20c0e;
 }
+
+.cky-btn {
+	background-color: #e83b0a;
+}
 /* __________________________________________________________________________ */
 .font1 {
 	font-size: 4rem;
@@ -91,6 +95,12 @@ hr {
 	width: 100%;
 	border-width: 0;
 }
+button {
+	font-size: 1rem !important;
+	font-family: lft-etica, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
 .fa-navicon {
 	display: block;
 }
@@ -111,6 +121,9 @@ hr {
 
 .hover {
 	font-size: 0.75rem !important;
+}
+.cky-preference-center p {
+	font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
 	p {
